@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otel yönetim Sistemi", "Otel yönetim Sistemi\Otel yönetim Sistemi.csproj", "{73697EBF-62DA-47E5-AF03-2703329968D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otel yönetim Sistemi", "Otel yönetim Sistemi\Otel yönetim Sistemi.csproj", "{63889B3A-73EC-44DF-8BA5-45F917D1B0BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73697EBF-62DA-47E5-AF03-2703329968D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73697EBF-62DA-47E5-AF03-2703329968D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73697EBF-62DA-47E5-AF03-2703329968D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73697EBF-62DA-47E5-AF03-2703329968D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63889B3A-73EC-44DF-8BA5-45F917D1B0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63889B3A-73EC-44DF-8BA5-45F917D1B0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63889B3A-73EC-44DF-8BA5-45F917D1B0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63889B3A-73EC-44DF-8BA5-45F917D1B0BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
