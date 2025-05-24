@@ -1,0 +1,16 @@
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\bin\Debug\Otel yönetim Sistemi.exe.config
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\bin\Debug\Otel yönetim Sistemi.exe
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\bin\Debug\Otel yönetim Sistemi.pdb
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel yönetim Sistemi.csproj.AssemblyReference.cache
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel_yönetim_Sistemi.FormLogin.resources
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel_yönetim_Sistemi.Properties.Resources.resources
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel yönetim Sistemi.csproj.GenerateResource.cache
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel yönetim Sistemi.csproj.CoreCompileInputs.cache
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel yönetim Sistemi.exe
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel yönetim Sistemi.pdb
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\bin\Debug\AMRConnector.dll
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel y_n.C8B9FCF2.Up2Date
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel_yönetim_Sistemi.Forms.AdminHomePage.resources
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel_yönetim_Sistemi.Forms.MüşteriHomePage.resources
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel_yönetim_Sistemi.Forms.ResepsiyonHomePage.resources
+C:\Users\sabre\OneDrive\Desktop\Otel yönetim Sistemi\Otel yönetim Sistemi\obj\Debug\Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla.resources
