@@ -33,7 +33,6 @@ namespace Otel_yönetim_Sistemi.dao
         public User AuthenticateUser(User user)
         {
             var users = GetCollection<User>("users");
-            MessageBox.Show("in repo user: " + user.Email);
             // First find user by email only
             var filter = Builders<User>.Filter.Eq(u => u.Email, user.Email);
             var foundUser = users.Find(filter).FirstOrDefault();

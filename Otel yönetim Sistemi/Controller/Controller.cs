@@ -36,9 +36,7 @@ namespace Otel_yönetim_Sistemi.Controller
                 Email = email,
                 Password = password
             };
-            MessageBox.Show($"in contrler user: {user.Username}, {user.Email}, {user.Password}");
             var foundUser = _repository.AuthenticateUser(user);
-            MessageBox.Show("form user: " + user.Username);
             if (foundUser != null && foundUser.Role == role)
             {
                 return true;
