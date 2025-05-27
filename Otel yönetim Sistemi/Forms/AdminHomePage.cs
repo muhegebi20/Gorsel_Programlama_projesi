@@ -46,40 +46,40 @@ namespace Otel_yönetim_Sistemi.Forms
             }
         }
 
-        private void buttonMüşteriYönetimi_Click(object sender, EventArgs e)
+        private void buttonMusteriYonetimi_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonMüşteriYönetimi);
-            userControlFaturaHesapla1.Visible = false;
+            MovePanal(buttonMusteriYonetimi);
+            userControlFaturaHesapla2.Visible = false;
 
         }
 
-        private void buttonOdaYönetimi_Click(object sender, EventArgs e)
+        private void buttonOdaYonetimi_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonOdaYönetimi);
-            userControlFaturaHesapla1.Visible = false;
+            MovePanal(buttonOdaYonetimi);
+            userControlFaturaHesapla2.Visible = false;
         }
 
-        private void buttonRezervasyonİşlemleri_Click(object sender, EventArgs e)
+        private void buttonRezervasyonislemleri_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonRezervasyonİşlemleri);
-            userControlFaturaHesapla1.Visible = false;
+            MovePanal(buttonRezervasyonislemleri);
+            userControlFaturaHesapla2.Visible = false;
         }
 
         private void buttonFaturaHesapla_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
             MovePanal(buttonFaturaHesapla);
-            userControlFaturaHesapla1.Visible = true;
+            userControlFaturaHesapla2.Visible = true;
         }
 
-        private void buttonRaporlarıGörüntüle_Click(object sender, EventArgs e)
+        private void buttonRaporlariGoruntule_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonRaporlarıGörüntüle);
-            userControlFaturaHesapla1.Visible = false;
+            MovePanal(buttonRaporlariGoruntule);
+            userControlFaturaHesapla2.Visible = false;
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-namespace Otel_yönetim_Sistemi.Model
+namespace Otel_yonetim_Sistemi.Model
 {
     public class User
     {
