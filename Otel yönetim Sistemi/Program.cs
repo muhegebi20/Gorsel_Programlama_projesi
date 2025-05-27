@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Otel_yönetim_Sistemi.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Otel_yönetim_Sistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run( new RegisterUser());
         }
     }
 }
