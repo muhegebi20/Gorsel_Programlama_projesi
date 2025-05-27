@@ -1,0 +1,20 @@
+Packages
+# Visual Studio files
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.cache
+*.pdb
+*.exe
+*.dll
+packages/
+
+# NuGet
+*.nupkg
+.nuget/
+
+# Other
+.vs/
+.DS_Store
+*.swp
