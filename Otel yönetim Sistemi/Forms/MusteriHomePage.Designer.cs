@@ -285,11 +285,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-<<<<<<< HEAD:Otel yönetim Sistemi/Forms/MüşteriHomePage.Designer.cs
-            this.Name = "MüşteriHomePage";
-=======
             this.Name = "MusteriHomePage";
->>>>>>> 81cd984d6953da013656a85a451e098f96441751:Otel yönetim Sistemi/Forms/MusteriHomePage.Designer.cs
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MüşteriHomePage_Load);

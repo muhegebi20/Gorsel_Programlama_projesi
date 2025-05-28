@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Otel_yonetim_Sistemi.dao;
 
 namespace Otel_yönetim_Sistemi.Model
 {
-    // Models/Room.cs
     public class Room
     {
         [BsonId]
@@ -18,6 +18,6 @@ namespace Otel_yönetim_Sistemi.Model
         public double Price { get; set; }
         public int Capacity { get; set; }
         public string Status { get; set; } // Available, Occupied, Maintenance
-        public List<string> Amenities { get; set; } // WiFi, TV, MiniBar
+        public List<string> Amenities { get; set; } 
     }
 }
