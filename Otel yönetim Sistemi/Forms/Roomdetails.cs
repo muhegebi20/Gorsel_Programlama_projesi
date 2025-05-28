@@ -9,12 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Otel_yonetim_Sistemi.dao;
 
 namespace Otel_yönetim_Sistemi.Forms
 {
     public partial class Roomdetails : Form
     {
-        private roomController roomController = new roomController();
+        private Controller.roomController _controller = new Controller.roomController();
+
         public Roomdetails()
         {
             InitializeComponent();
@@ -37,9 +39,11 @@ namespace Otel_yönetim_Sistemi.Forms
         // Assuming you have a method to fetch room data
         private void LoadRoomData()
         {
-            List<Room> roomTable = roomController.getAllRooms(); // Fetch data from DB or other source
-            
-            dataGridViewRooms.DataSource = roomTable;
+            List<Room> roomTable = _controller.getAllRooms(); // Fetch data from DB or other source
+            foreach (Room room in roomTable)
+            {
+                dataGridView1.Rows.Add(room.Type, room.Price, room.Capacity, room.Status);
+            }
         }
         private void AddActionButtons()
         {
@@ -51,7 +55,7 @@ namespace Otel_yönetim_Sistemi.Forms
                 Text = "Edit",
                 UseColumnTextForButtonValue = true
             };
-            dataGridViewRooms.Columns.Add(editButton);
+            dataGridView1.Columns.Add(editButton);
 
             // Add Delete button
             DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn
@@ -61,7 +65,7 @@ namespace Otel_yönetim_Sistemi.Forms
                 Text = "Delete",
                 UseColumnTextForButtonValue = true
             };
-            dataGridViewRooms.Columns.Add(deleteButton);
+            dataGridView1.Columns.Add(deleteButton);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -75,6 +79,11 @@ namespace Otel_yönetim_Sistemi.Forms
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Roomdetails_Load(object sender, EventArgs e)
         {
 
         }
