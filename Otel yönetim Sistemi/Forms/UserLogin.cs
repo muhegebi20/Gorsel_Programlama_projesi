@@ -44,12 +44,21 @@ namespace Otel_yönetim_Sistemi.Forms
             Controller.userController controller = new Controller.userController();
             if (controller.AuthenticateUser(email, password, role))
             {
-                MessageBox.Show("Giriş başarılı!");
-                // Burada başarılı giriş sonrası yapılacak işlemler
+                Form nextForm;
+                if (role == "admin")
+                {
+                    nextForm = new AdminHomePage();
+                }
+                else
+                {
+                    nextForm = new MusteriHomePage();
+                }
+
+                nextForm.FormClosed += (s, args) => this.Close();
+                nextForm.Show();
                 this.Hide();
-                // Örneğin, ana formu açabilirsiniz
-                // MainForm mainForm = new MainForm();
-                // mainForm.Show();
+
+                MessageBox.Show("Giriş başarılı!");
             }
             else
             {

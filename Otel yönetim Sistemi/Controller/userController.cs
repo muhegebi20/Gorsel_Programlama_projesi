@@ -56,5 +56,6 @@ namespace Otel_yönetim_Sistemi.Controller
             };
             return _userDAO.UserExists(user);
         }
+
     }
 }
