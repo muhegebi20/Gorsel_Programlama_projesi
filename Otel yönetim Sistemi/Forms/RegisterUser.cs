@@ -12,10 +12,14 @@ namespace Otel_yönetim_Sistemi.Forms
 {
     public partial class RegisterUser: Form
     {
-        private Controller.Controller _controller = new Controller.Controller();
+        private Controller.userController _controller = new Controller.userController();
+        string pass = BCrypt.Net.BCrypt.HashPassword("admin");
         public RegisterUser()
         {
             InitializeComponent();
+            showPass.Text = pass;
+
+
         }
 
         private void btn_register_Click(object sender, EventArgs e)
@@ -23,6 +27,12 @@ namespace Otel_yönetim_Sistemi.Forms
             string username = _name.Text;
             string password = _password.Text;
             string email = _email.Text;
+
+            if (_controller.UserExists(email))
+            {
+                MessageBox.Show("Bu e-posta adresi zaten kayıtlı. Lütfen farklı bir e-posta adresi kullanın.");
+                return;
+            }
 
             _controller.RegisterUser(username, email, password);
 

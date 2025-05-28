@@ -40,24 +40,24 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabelExit = new System.Windows.Forms.LinkLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelDataTime = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.userControlFaturaHesapla1 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,7 +73,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(260, 720);
+            this.panel1.Size = new System.Drawing.Size(260, 670);
             this.panel1.TabIndex = 0;
             // 
             // panelMove
@@ -179,7 +179,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(78, 141);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 30);
+            this.label5.Size = new System.Drawing.Size(115, 37);
             this.label5.TabIndex = 0;
             this.label5.Text = "Sistemi";
             // 
@@ -191,9 +191,20 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(45, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(172, 30);
+            this.label4.Size = new System.Drawing.Size(206, 37);
             this.label4.TabIndex = 0;
             this.label4.Text = "Otel Yönetim";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Otel_yönetim_Sistemi.Properties.Resources.home_icon_silhouette;
+            this.pictureBox1.Location = new System.Drawing.Point(71, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 96);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -204,7 +215,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1106, 93);
+            this.panel2.Size = new System.Drawing.Size(1029, 93);
             this.panel2.TabIndex = 0;
             // 
             // linkLabelExit
@@ -216,14 +227,25 @@
             this.linkLabelExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelExit.ForeColor = System.Drawing.Color.MidnightBlue;
             this.linkLabelExit.LinkColor = System.Drawing.Color.MidnightBlue;
-            this.linkLabelExit.Location = new System.Drawing.Point(974, 57);
+            this.linkLabelExit.Location = new System.Drawing.Point(897, 57);
             this.linkLabelExit.Name = "linkLabelExit";
-            this.linkLabelExit.Size = new System.Drawing.Size(80, 21);
+            this.linkLabelExit.Size = new System.Drawing.Size(101, 23);
             this.linkLabelExit.TabIndex = 0;
             this.linkLabelExit.TabStop = true;
             this.linkLabelExit.Text = "Çıkış Yap";
             this.linkLabelExit.VisitedLinkColor = System.Drawing.Color.MidnightBlue;
             this.linkLabelExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelExit_LinkClicked);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Otel_yönetim_Sistemi.Properties.Resources.office_man;
+            this.pictureBox2.Location = new System.Drawing.Point(846, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // labelDataTime
             // 
@@ -233,7 +255,7 @@
             this.labelDataTime.ForeColor = System.Drawing.Color.MidnightBlue;
             this.labelDataTime.Location = new System.Drawing.Point(22, 59);
             this.labelDataTime.Name = "labelDataTime";
-            this.labelDataTime.Size = new System.Drawing.Size(18, 19);
+            this.labelDataTime.Size = new System.Drawing.Size(21, 23);
             this.labelDataTime.TabIndex = 0;
             this.labelDataTime.Text = "?";
             // 
@@ -247,7 +269,7 @@
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(260, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1106, 192);
+            this.panel4.Size = new System.Drawing.Size(1029, 192);
             this.panel4.TabIndex = 0;
             // 
             // label2
@@ -258,7 +280,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(22, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 19);
+            this.label2.Size = new System.Drawing.Size(129, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Hoş Geldin :";
             // 
@@ -270,7 +292,7 @@
             this.labelUsername.ForeColor = System.Drawing.Color.White;
             this.labelUsername.Location = new System.Drawing.Point(137, 132);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(18, 19);
+            this.labelUsername.Size = new System.Drawing.Size(21, 23);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "?";
             // 
@@ -280,34 +302,8 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(260, 192);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1106, 528);
+            this.panel5.Size = new System.Drawing.Size(1029, 478);
             this.panel5.TabIndex = 0;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Otel_yönetim_Sistemi.Properties.Resources.office_man;
-            this.pictureBox2.Location = new System.Drawing.Point(923, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::Otel_yönetim_Sistemi.Properties.Resources.home_icon_silhouette;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 96);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // userControlFaturaHesapla1
             // 
@@ -317,16 +313,20 @@
             this.userControlFaturaHesapla1.Location = new System.Drawing.Point(0, 0);
             this.userControlFaturaHesapla1.Margin = new System.Windows.Forms.Padding(4);
             this.userControlFaturaHesapla1.Name = "userControlFaturaHesapla1";
-            this.userControlFaturaHesapla1.Size = new System.Drawing.Size(1106, 528);
+            this.userControlFaturaHesapla1.Size = new System.Drawing.Size(1029, 478);
             this.userControlFaturaHesapla1.TabIndex = 0;
             this.userControlFaturaHesapla1.Visible = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // AdminHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1366, 720);
+            this.ClientSize = new System.Drawing.Size(1289, 670);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -341,13 +341,13 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

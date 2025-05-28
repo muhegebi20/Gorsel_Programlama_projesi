@@ -6,17 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MongoDB.Driver;
+using BCrypt.Net;
 using System.Windows.Forms;
 
 namespace Otel_yönetim_Sistemi.Controller
 {
-    public class Controller
+    public class userController
     {
-        Repository _repository;
+        private readonly UserDAO _userDAO;
 
-        public Controller()
+        public userController()
         {
-            _repository = new Repository();
+            //_userDAO = new Repository();
+            _userDAO = new UserDAO();
         }
 
         public void RegisterUser(string username,string email,  string password)
@@ -27,7 +29,7 @@ namespace Otel_yönetim_Sistemi.Controller
                 Email = email,
                 Password = BCrypt.Net.BCrypt.HashPassword(password)
             };
-            _repository.RegisterUser(newUser);
+            _userDAO.RegisterUser(newUser);
         }
         public bool AuthenticateUser(string email, string password, string role)
         {
@@ -36,7 +38,7 @@ namespace Otel_yönetim_Sistemi.Controller
                 Email = email,
                 Password = password
             };
-            var foundUser = _repository.AuthenticateUser(user);
+            var foundUser = _userDAO.AuthenticateUser(user);
             if (foundUser != null && foundUser.Role == role)
             {
                 return true;
@@ -45,6 +47,14 @@ namespace Otel_yönetim_Sistemi.Controller
             {
                 return false;
             }    
+        }
+        public bool UserExists(string email)
+        {
+            var user = new User
+            {
+                Email = email
+            };
+            return _userDAO.UserExists(user);
         }
     }
 }

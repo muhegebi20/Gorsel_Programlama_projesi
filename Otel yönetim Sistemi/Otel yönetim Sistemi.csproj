@@ -147,7 +147,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Controller\roomController.cs" />
+    <Compile Include="dao\RoomDAO.cs" />
+    <Compile Include="Forms\AddRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddRooms.Designer.cs">
+      <DependentUpon>AddRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\userController.cs" />
     <Compile Include="dao\Repository.cs" />
     <Compile Include="dao\UserDAO.cs" />
     <Compile Include="Forms\AdminHomePage.cs">
@@ -180,6 +188,7 @@
     <Compile Include="Forms\UserLogin.Designer.cs">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Room.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -189,6 +198,9 @@
     <Compile Include="User Control\UserControlFaturaHesapla.Designer.cs">
       <DependentUpon>UserControlFaturaHesapla.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AddRooms.resx">
+      <DependentUpon>AddRooms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminHomePage.resx">
       <DependentUpon>AdminHomePage.cs</DependentUpon>
     </EmbeddedResource>

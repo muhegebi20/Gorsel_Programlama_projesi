@@ -41,7 +41,7 @@ namespace Otel_yönetim_Sistemi.Forms
             string password = user_password.Text;
             selectedRole = userRole();
             string role = selectedRole;
-            Controller.Controller controller = new Controller.Controller();
+            Controller.userController controller = new Controller.userController();
             if (controller.AuthenticateUser(email, password, role))
             {
                 MessageBox.Show("Giriş başarılı!");
