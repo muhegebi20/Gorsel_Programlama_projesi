@@ -36,10 +36,10 @@ namespace Otel_yönetim_Sistemi.Forms
         {
 
         }
-        // Assuming you have a method to fetch room data
+        
         private void LoadRoomData()
         {
-            List<Room> roomTable = _controller.getAllRooms(); // Fetch data from DB or other source
+            List<Room> roomTable = _controller.getAllRooms(); 
             foreach (Room room in roomTable)
             {
                 dataGridView1.Rows.Add(room.Type, room.Price, room.Capacity, room.Status);
