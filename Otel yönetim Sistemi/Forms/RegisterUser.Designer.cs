@@ -37,7 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this._password = new System.Windows.Forms.TextBox();
             this._email = new System.Windows.Forms.TextBox();
-            this.showPass = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,19 +135,11 @@
             this._email.Size = new System.Drawing.Size(239, 37);
             this._email.TabIndex = 0;
             // 
-            // showPass
-            // 
-            this.showPass.Location = new System.Drawing.Point(498, 127);
-            this.showPass.Name = "showPass";
-            this.showPass.Size = new System.Drawing.Size(409, 22);
-            this.showPass.TabIndex = 3;
-            // 
             // RegisterUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 450);
-            this.Controls.Add(this.showPass);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "RegisterUser";
@@ -156,7 +147,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -171,6 +161,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_register;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox showPass;
     }
 }

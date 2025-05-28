@@ -31,6 +31,7 @@ namespace Otel_yönetim_Sistemi
         {
             string amenity = txt_amenity.Text;
             amenities.Add(amenity);
+            show_amenities.Text += string.Format($"{amenity}, ");
             txt_amenity.Text = string.Empty;
         }
 
@@ -46,6 +47,18 @@ namespace Otel_yönetim_Sistemi
             MessageBox.Show("Room successfully added");
             
             
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            for (int i = 0; i < groupBox1.Controls.Count; i++)
+            {
+                if (groupBox1.Controls[i] is TextBox)
+                {
+                    groupBox1.Controls[i].Text = string.Empty;
+                }
+            }
+
         }
     }
 }
