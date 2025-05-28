@@ -1,6 +1,6 @@
 ﻿namespace Otel_yönetim_Sistemi.Forms
 {
-    partial class MüşteriHomePage
+    partial class MusteriHomePage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MüşteriHomePage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MusteriHomePage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMove = new System.Windows.Forms.Panel();
-            this.buttonBilgilerimiGüncelle = new System.Windows.Forms.Button();
-            this.buttonFaturalarımıGörüntüle = new System.Windows.Forms.Button();
-            this.buttonRezervasyonlarımıGörüntüle = new System.Windows.Forms.Button();
+            this.buttonBilgilerimiGuncelle = new System.Windows.Forms.Button();
+            this.buttonFaturalarimiGoruntule = new System.Windows.Forms.Button();
+            this.buttonRezervasyonlarimiGoruntule = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,9 +60,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.panelMove);
-            this.panel1.Controls.Add(this.buttonBilgilerimiGüncelle);
-            this.panel1.Controls.Add(this.buttonFaturalarımıGörüntüle);
-            this.panel1.Controls.Add(this.buttonRezervasyonlarımıGörüntüle);
+            this.panel1.Controls.Add(this.buttonBilgilerimiGuncelle);
+            this.panel1.Controls.Add(this.buttonFaturalarimiGoruntule);
+            this.panel1.Controls.Add(this.buttonRezervasyonlarimiGoruntule);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -79,50 +79,50 @@
             this.panelMove.TabIndex = 0;
             this.panelMove.Visible = false;
             // 
-            // buttonBilgilerimiGüncelle
+            // buttonBilgilerimiGuncelle
             // 
-            this.buttonBilgilerimiGüncelle.FlatAppearance.BorderSize = 0;
-            this.buttonBilgilerimiGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBilgilerimiGüncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBilgilerimiGüncelle.ForeColor = System.Drawing.Color.White;
-            this.buttonBilgilerimiGüncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonBilgilerimiGüncelle.Location = new System.Drawing.Point(28, 366);
-            this.buttonBilgilerimiGüncelle.Name = "buttonBilgilerimiGüncelle";
-            this.buttonBilgilerimiGüncelle.Size = new System.Drawing.Size(207, 57);
-            this.buttonBilgilerimiGüncelle.TabIndex = 3;
-            this.buttonBilgilerimiGüncelle.Text = "Bilgilerimi Güncelle";
-            this.buttonBilgilerimiGüncelle.UseVisualStyleBackColor = true;
-            this.buttonBilgilerimiGüncelle.Click += new System.EventHandler(this.buttonBilgilerimiGüncelle_Click);
+            this.buttonBilgilerimiGuncelle.FlatAppearance.BorderSize = 0;
+            this.buttonBilgilerimiGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBilgilerimiGuncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBilgilerimiGuncelle.ForeColor = System.Drawing.Color.White;
+            this.buttonBilgilerimiGuncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBilgilerimiGuncelle.Location = new System.Drawing.Point(28, 366);
+            this.buttonBilgilerimiGuncelle.Name = "buttonBilgilerimiGuncelle";
+            this.buttonBilgilerimiGuncelle.Size = new System.Drawing.Size(207, 57);
+            this.buttonBilgilerimiGuncelle.TabIndex = 3;
+            this.buttonBilgilerimiGuncelle.Text = "Bilgilerimi Güncelle";
+            this.buttonBilgilerimiGuncelle.UseVisualStyleBackColor = true;
+            this.buttonBilgilerimiGuncelle.Click += new System.EventHandler(this.buttonBilgilerimiGuncelle_Click);
             // 
-            // buttonFaturalarımıGörüntüle
+            // buttonFaturalarimiGoruntule
             // 
-            this.buttonFaturalarımıGörüntüle.FlatAppearance.BorderSize = 0;
-            this.buttonFaturalarımıGörüntüle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFaturalarımıGörüntüle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFaturalarımıGörüntüle.ForeColor = System.Drawing.Color.White;
-            this.buttonFaturalarımıGörüntüle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonFaturalarımıGörüntüle.Location = new System.Drawing.Point(28, 286);
-            this.buttonFaturalarımıGörüntüle.Name = "buttonFaturalarımıGörüntüle";
-            this.buttonFaturalarımıGörüntüle.Size = new System.Drawing.Size(207, 57);
-            this.buttonFaturalarımıGörüntüle.TabIndex = 2;
-            this.buttonFaturalarımıGörüntüle.Text = "Faturalarımı Görüntüle";
-            this.buttonFaturalarımıGörüntüle.UseVisualStyleBackColor = true;
-            this.buttonFaturalarımıGörüntüle.Click += new System.EventHandler(this.buttonFaturalarımıGörüntüle_Click);
+            this.buttonFaturalarimiGoruntule.FlatAppearance.BorderSize = 0;
+            this.buttonFaturalarimiGoruntule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFaturalarimiGoruntule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFaturalarimiGoruntule.ForeColor = System.Drawing.Color.White;
+            this.buttonFaturalarimiGoruntule.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonFaturalarimiGoruntule.Location = new System.Drawing.Point(28, 286);
+            this.buttonFaturalarimiGoruntule.Name = "buttonFaturalarimiGoruntule";
+            this.buttonFaturalarimiGoruntule.Size = new System.Drawing.Size(207, 57);
+            this.buttonFaturalarimiGoruntule.TabIndex = 2;
+            this.buttonFaturalarimiGoruntule.Text = "Faturalarımı Görüntüle";
+            this.buttonFaturalarimiGoruntule.UseVisualStyleBackColor = true;
+            this.buttonFaturalarimiGoruntule.Click += new System.EventHandler(this.buttonFaturalarimiGoruntule_Click);
             // 
-            // buttonRezervasyonlarımıGörüntüle
+            // buttonRezervasyonlarimiGoruntule
             // 
-            this.buttonRezervasyonlarımıGörüntüle.FlatAppearance.BorderSize = 0;
-            this.buttonRezervasyonlarımıGörüntüle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRezervasyonlarımıGörüntüle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRezervasyonlarımıGörüntüle.ForeColor = System.Drawing.Color.White;
-            this.buttonRezervasyonlarımıGörüntüle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonRezervasyonlarımıGörüntüle.Location = new System.Drawing.Point(28, 211);
-            this.buttonRezervasyonlarımıGörüntüle.Name = "buttonRezervasyonlarımıGörüntüle";
-            this.buttonRezervasyonlarımıGörüntüle.Size = new System.Drawing.Size(207, 57);
-            this.buttonRezervasyonlarımıGörüntüle.TabIndex = 1;
-            this.buttonRezervasyonlarımıGörüntüle.Text = "Rezervasyonlarımı Görüntüle";
-            this.buttonRezervasyonlarımıGörüntüle.UseVisualStyleBackColor = true;
-            this.buttonRezervasyonlarımıGörüntüle.Click += new System.EventHandler(this.buttonRezervasyonlarımıGörüntüle_Click);
+            this.buttonRezervasyonlarimiGoruntule.FlatAppearance.BorderSize = 0;
+            this.buttonRezervasyonlarimiGoruntule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRezervasyonlarimiGoruntule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRezervasyonlarimiGoruntule.ForeColor = System.Drawing.Color.White;
+            this.buttonRezervasyonlarimiGoruntule.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRezervasyonlarimiGoruntule.Location = new System.Drawing.Point(28, 211);
+            this.buttonRezervasyonlarimiGoruntule.Name = "buttonRezervasyonlarimiGoruntule";
+            this.buttonRezervasyonlarimiGoruntule.Size = new System.Drawing.Size(207, 57);
+            this.buttonRezervasyonlarimiGoruntule.TabIndex = 1;
+            this.buttonRezervasyonlarimiGoruntule.Text = "Rezervasyonlarımı Görüntüle";
+            this.buttonRezervasyonlarimiGoruntule.UseVisualStyleBackColor = true;
+            this.buttonRezervasyonlarimiGoruntule.Click += new System.EventHandler(this.buttonRezervasyonlarımıGoruntule_Click);
             // 
             // panel3
             // 
@@ -272,7 +272,7 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // MüşteriHomePage
+            // MusteriHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -285,7 +285,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+<<<<<<< HEAD:Otel yönetim Sistemi/Forms/MüşteriHomePage.Designer.cs
             this.Name = "MüşteriHomePage";
+=======
+            this.Name = "MusteriHomePage";
+>>>>>>> 81cd984d6953da013656a85a451e098f96441751:Otel yönetim Sistemi/Forms/MusteriHomePage.Designer.cs
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MüşteriHomePage_Load);
@@ -306,9 +310,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelMove;
-        private System.Windows.Forms.Button buttonBilgilerimiGüncelle;
-        private System.Windows.Forms.Button buttonFaturalarımıGörüntüle;
-        private System.Windows.Forms.Button buttonRezervasyonlarımıGörüntüle;
+        private System.Windows.Forms.Button buttonBilgilerimiGuncelle;
+        private System.Windows.Forms.Button buttonFaturalarimiGoruntule;
+        private System.Windows.Forms.Button buttonRezervasyonlarimiGoruntule;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

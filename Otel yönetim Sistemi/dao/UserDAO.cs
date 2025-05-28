@@ -1,7 +1,14 @@
 using Otel_yönetim_Sistemi.Model;
 using MongoDB.Driver;
+<<<<<<< HEAD
 
 namespace Otel_yönetim_Sistemi.dao
+=======
+using Otel_yonetim_Sistemi.Model;
+using Otel_yonetim_Sistemi.dao;
+
+namespace Otel_yonetim_Sistemi.dao
+>>>>>>> 81cd984d6953da013656a85a451e098f96441751
 {
     public class UserDAO
     {

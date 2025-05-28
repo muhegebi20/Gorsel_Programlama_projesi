@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Otel_yönetim_Sistemi.Forms
 {
-    public partial class MüşteriHomePage : Form
+    public partial class MusteriHomePage : Form
     {
         public string UserName;
-        public MüşteriHomePage()
+        public MusteriHomePage()
         {
             InitializeComponent();
         }
@@ -45,22 +45,22 @@ namespace Otel_yönetim_Sistemi.Forms
             labelUsername.Text = UserName;
         }
 
-        private void buttonRezervasyonlarımıGörüntüle_Click(object sender, EventArgs e)
+        private void buttonRezervasyonlarımıGoruntule_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonRezervasyonlarımıGörüntüle);
+            MovePanal(buttonRezervasyonlarimiGoruntule);
         }
 
-        private void buttonFaturalarımıGörüntüle_Click(object sender, EventArgs e)
+        private void buttonFaturalarimiGoruntule_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonFaturalarımıGörüntüle);
+            MovePanal(buttonFaturalarimiGoruntule);
         }
 
-        private void buttonBilgilerimiGüncelle_Click(object sender, EventArgs e)
+        private void buttonBilgilerimiGuncelle_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonBilgilerimiGüncelle);
+            MovePanal(buttonBilgilerimiGuncelle);
         }
     }
 }

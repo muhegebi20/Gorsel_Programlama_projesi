@@ -1,9 +1,9 @@
 using System;
 using System.Windows.Forms;
 using MongoDB.Driver;
-using Otel_yönetim_Sistemi.Model;
+using Otel_yonetim_Sistemi.Model;
 
-namespace Otel_yönetim_Sistemi.dao
+namespace Otel_yonetim_Sistemi.dao
 {
     public class Repository
     {

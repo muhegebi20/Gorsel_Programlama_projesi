@@ -45,17 +45,17 @@ namespace Otel_yönetim_Sistemi.Forms
             labelUsername.Text = UserName;
         }
 
-        private void buttonMüşteriYönetimi_Click(object sender, EventArgs e)
+        private void buttonMusteriYonetimi_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonMüşteriYönetimi);
+            MovePanal(buttonMusteriYonetimi);
             userControlFaturaHesapla1.Visible = false;
         }
 
-        private void buttonRezervasyonİşlemleri_Click(object sender, EventArgs e)
+        private void buttonRezervasyonislemleri_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
-            MovePanal(buttonRezervasyonİşlemleri);
+            MovePanal(buttonRezervasyonislemleri);
             userControlFaturaHesapla1.Visible = false;
         }
 

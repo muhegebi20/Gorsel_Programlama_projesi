@@ -33,8 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelMove = new System.Windows.Forms.Panel();
             this.buttonFaturaHesapla = new System.Windows.Forms.Button();
-            this.buttonRezervasyonİşlemleri = new System.Windows.Forms.Button();
-            this.buttonMüşteriYönetimi = new System.Windows.Forms.Button();
+            this.buttonRezervasyonislemleri = new System.Windows.Forms.Button();
+            this.buttonMusteriYonetimi = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,8 +63,8 @@
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.panelMove);
             this.panel1.Controls.Add(this.buttonFaturaHesapla);
-            this.panel1.Controls.Add(this.buttonRezervasyonİşlemleri);
-            this.panel1.Controls.Add(this.buttonMüşteriYönetimi);
+            this.panel1.Controls.Add(this.buttonRezervasyonislemleri);
+            this.panel1.Controls.Add(this.buttonMusteriYonetimi);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -96,35 +96,35 @@
             this.buttonFaturaHesapla.UseVisualStyleBackColor = true;
             this.buttonFaturaHesapla.Click += new System.EventHandler(this.buttonFaturaHesapla_Click);
             // 
-            // buttonRezervasyonİşlemleri
+            // buttonRezervasyonislemleri
             // 
-            this.buttonRezervasyonİşlemleri.FlatAppearance.BorderSize = 0;
-            this.buttonRezervasyonİşlemleri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRezervasyonİşlemleri.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRezervasyonİşlemleri.ForeColor = System.Drawing.Color.White;
-            this.buttonRezervasyonİşlemleri.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonRezervasyonİşlemleri.Location = new System.Drawing.Point(28, 286);
-            this.buttonRezervasyonİşlemleri.Name = "buttonRezervasyonİşlemleri";
-            this.buttonRezervasyonİşlemleri.Size = new System.Drawing.Size(207, 57);
-            this.buttonRezervasyonİşlemleri.TabIndex = 2;
-            this.buttonRezervasyonİşlemleri.Text = "Rezervasyon İşlemleri";
-            this.buttonRezervasyonİşlemleri.UseVisualStyleBackColor = true;
-            this.buttonRezervasyonİşlemleri.Click += new System.EventHandler(this.buttonRezervasyonİşlemleri_Click);
+            this.buttonRezervasyonislemleri.FlatAppearance.BorderSize = 0;
+            this.buttonRezervasyonislemleri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRezervasyonislemleri.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRezervasyonislemleri.ForeColor = System.Drawing.Color.White;
+            this.buttonRezervasyonislemleri.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonRezervasyonislemleri.Location = new System.Drawing.Point(28, 286);
+            this.buttonRezervasyonislemleri.Name = "buttonRezervasyonislemleri";
+            this.buttonRezervasyonislemleri.Size = new System.Drawing.Size(207, 57);
+            this.buttonRezervasyonislemleri.TabIndex = 2;
+            this.buttonRezervasyonislemleri.Text = "Rezervasyon İşlemleri";
+            this.buttonRezervasyonislemleri.UseVisualStyleBackColor = true;
+            this.buttonRezervasyonislemleri.Click += new System.EventHandler(this.buttonRezervasyonislemleri_Click);
             // 
-            // buttonMüşteriYönetimi
+            // buttonMusteriYonetimi
             // 
-            this.buttonMüşteriYönetimi.FlatAppearance.BorderSize = 0;
-            this.buttonMüşteriYönetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMüşteriYönetimi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMüşteriYönetimi.ForeColor = System.Drawing.Color.White;
-            this.buttonMüşteriYönetimi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMüşteriYönetimi.Location = new System.Drawing.Point(28, 211);
-            this.buttonMüşteriYönetimi.Name = "buttonMüşteriYönetimi";
-            this.buttonMüşteriYönetimi.Size = new System.Drawing.Size(207, 57);
-            this.buttonMüşteriYönetimi.TabIndex = 1;
-            this.buttonMüşteriYönetimi.Text = "Müşteri Yönetimi";
-            this.buttonMüşteriYönetimi.UseVisualStyleBackColor = true;
-            this.buttonMüşteriYönetimi.Click += new System.EventHandler(this.buttonMüşteriYönetimi_Click);
+            this.buttonMusteriYonetimi.FlatAppearance.BorderSize = 0;
+            this.buttonMusteriYonetimi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMusteriYonetimi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMusteriYonetimi.ForeColor = System.Drawing.Color.White;
+            this.buttonMusteriYonetimi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMusteriYonetimi.Location = new System.Drawing.Point(28, 211);
+            this.buttonMusteriYonetimi.Name = "buttonMusteriYonetimi";
+            this.buttonMusteriYonetimi.Size = new System.Drawing.Size(207, 57);
+            this.buttonMusteriYonetimi.TabIndex = 1;
+            this.buttonMusteriYonetimi.Text = "Müşteri Yönetimi";
+            this.buttonMusteriYonetimi.UseVisualStyleBackColor = true;
+            this.buttonMusteriYonetimi.Click += new System.EventHandler(this.buttonMusteriYonetimi_Click);
             // 
             // panel3
             // 
@@ -323,8 +323,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelMove;
         private System.Windows.Forms.Button buttonFaturaHesapla;
-        private System.Windows.Forms.Button buttonRezervasyonİşlemleri;
-        private System.Windows.Forms.Button buttonMüşteriYönetimi;
+        private System.Windows.Forms.Button buttonRezervasyonislemleri;
+        private System.Windows.Forms.Button buttonMusteriYonetimi;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

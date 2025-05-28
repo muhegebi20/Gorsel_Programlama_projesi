@@ -1,5 +1,5 @@
-﻿using Otel_yönetim_Sistemi.dao;
-using Otel_yönetim_Sistemi.Model;
+﻿using Otel_yonetim_Sistemi.dao;
+using Otel_yonetim_Sistemi.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
