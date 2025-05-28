@@ -81,5 +81,10 @@ namespace Otel_yönetim_Sistemi.Forms
             MovePanal(buttonRaporlariGoruntule);
             userControlFaturaHesapla2.Visible = false;
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

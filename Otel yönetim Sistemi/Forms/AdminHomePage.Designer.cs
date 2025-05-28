@@ -49,11 +49,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.userControlFaturaHesapla2 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.userControlFaturaHesapla1 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.userControlFaturaHesapla2 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -243,7 +241,6 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Otel_yönetim_Sistemi.Properties.Resources.office_man;
-            this.pictureBox2.Location = new System.Drawing.Point(846, 12);
             this.pictureBox2.Location = new System.Drawing.Point(923, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 75);
@@ -275,6 +272,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1029, 192);
             this.panel4.TabIndex = 0;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label2
             // 
@@ -300,10 +298,6 @@
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "?";
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.userControlFaturaHesapla2);
@@ -312,6 +306,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1029, 478);
             this.panel5.TabIndex = 0;
+            // 
+            // userControlFaturaHesapla2
+            // 
+            this.userControlFaturaHesapla2.BackColor = System.Drawing.Color.White;
+            this.userControlFaturaHesapla2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlFaturaHesapla2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlFaturaHesapla2.Location = new System.Drawing.Point(0, 0);
+            this.userControlFaturaHesapla2.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlFaturaHesapla2.Name = "userControlFaturaHesapla2";
+            this.userControlFaturaHesapla2.Size = new System.Drawing.Size(1029, 478);
+            this.userControlFaturaHesapla2.TabIndex = 0;
+            this.userControlFaturaHesapla2.Visible = false;
             // 
             // userControlFaturaHesapla1
             // 
@@ -324,17 +330,6 @@
             this.userControlFaturaHesapla1.Size = new System.Drawing.Size(1029, 478);
             this.userControlFaturaHesapla1.TabIndex = 0;
             this.userControlFaturaHesapla1.Visible = false;
-            // userControlFaturaHesapla2
-            // 
-            this.userControlFaturaHesapla2.BackColor = System.Drawing.Color.White;
-            this.userControlFaturaHesapla2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControlFaturaHesapla2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControlFaturaHesapla2.Location = new System.Drawing.Point(0, 0);
-            this.userControlFaturaHesapla2.Margin = new System.Windows.Forms.Padding(4);
-            this.userControlFaturaHesapla2.Name = "userControlFaturaHesapla2";
-            this.userControlFaturaHesapla2.Size = new System.Drawing.Size(1106, 528);
-            this.userControlFaturaHesapla2.TabIndex = 0;
-            this.userControlFaturaHesapla2.Visible = false;
             // 
             // timer1
             // 
