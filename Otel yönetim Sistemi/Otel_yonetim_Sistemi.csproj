@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -182,12 +182,27 @@
     <Compile Include="Forms\ResepsiyonHomePage.Designer.cs">
       <DependentUpon>ResepsiyonHomePage.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="Forms\RoomListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RoomListForm.Designer.cs">
+      <DependentUpon>RoomListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UpdateUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UpdateUserInfo.Designer.cs">
+      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
+    </Compile>
+
     <Compile Include="Forms\Roomdetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Roomdetails.Designer.cs">
       <DependentUpon>Roomdetails.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Forms\UserLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +219,8 @@
     <Compile Include="User Control\UserControlFaturaHesapla.Designer.cs">
       <DependentUpon>UserControlFaturaHesapla.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Forms\AddRooms.resx">
       <DependentUpon>AddRooms.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ResepsiyonHomePage.resx">
       <DependentUpon>ResepsiyonHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RoomListForm.resx">
+      <DependentUpon>RoomListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UpdateUserInfo.resx">
+      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Roomdetails.resx">
       <DependentUpon>Roomdetails.cs</DependentUpon>
@@ -238,6 +261,8 @@
     <EmbeddedResource Include="User Control\UserControlFaturaHesapla.resx">
       <DependentUpon>UserControlFaturaHesapla.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
