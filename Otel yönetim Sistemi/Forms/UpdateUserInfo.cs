@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 
 namespace Otel_yönetim_Sistemi.Forms
 {
@@ -20,6 +20,11 @@ namespace Otel_yönetim_Sistemi.Forms
         private void UpdateUserInfo_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
