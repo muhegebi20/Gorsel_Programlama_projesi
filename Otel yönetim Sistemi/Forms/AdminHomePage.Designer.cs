@@ -49,9 +49,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlFaturaHesapla2 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.userControlFaturaHesapla1 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -307,6 +307,10 @@
             this.panel5.Size = new System.Drawing.Size(1029, 478);
             this.panel5.TabIndex = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // userControlFaturaHesapla2
             // 
             this.userControlFaturaHesapla2.BackColor = System.Drawing.Color.White;
@@ -318,6 +322,7 @@
             this.userControlFaturaHesapla2.Size = new System.Drawing.Size(1029, 478);
             this.userControlFaturaHesapla2.TabIndex = 0;
             this.userControlFaturaHesapla2.Visible = false;
+            this.userControlFaturaHesapla2.Load += new System.EventHandler(this.userControlFaturaHesapla2_Load);
             // 
             // userControlFaturaHesapla1
             // 
@@ -330,10 +335,6 @@
             this.userControlFaturaHesapla1.Size = new System.Drawing.Size(1029, 478);
             this.userControlFaturaHesapla1.TabIndex = 0;
             this.userControlFaturaHesapla1.Visible = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // AdminHomePage
             // 

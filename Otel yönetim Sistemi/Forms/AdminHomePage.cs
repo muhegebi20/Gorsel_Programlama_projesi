@@ -59,6 +59,10 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonOdaYonetimi);
             userControlFaturaHesapla2.Visible = false;
+
+            // Show the AddRoom form
+            AddRooms addRoomForm = new AddRooms();
+            addRoomForm.Show(); // Use ShowDialog() for modal, or Show() for non-modal
         }
 
         private void buttonRezervasyonislemleri_Click(object sender, EventArgs e)
@@ -83,6 +87,11 @@ namespace Otel_yönetim_Sistemi.Forms
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void userControlFaturaHesapla2_Load(object sender, EventArgs e)
         {
 
         }
