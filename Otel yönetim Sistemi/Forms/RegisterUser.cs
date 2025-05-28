@@ -13,11 +13,9 @@ namespace Otel_yönetim_Sistemi.Forms
     public partial class RegisterUser: Form
     {
         private Controller.userController _controller = new Controller.userController();
-        string pass = BCrypt.Net.BCrypt.HashPassword("admin");
         public RegisterUser()
         {
             InitializeComponent();
-            showPass.Text = pass;
 
 
         }
