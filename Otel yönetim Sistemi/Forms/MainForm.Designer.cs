@@ -34,8 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Girisbtn = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.checkin = new System.Windows.Forms.DateTimePicker();
+            this.checkout = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // comboBox3
@@ -48,9 +48,9 @@
             "3",
             "4",
             "5"});
-            this.comboBox3.Location = new System.Drawing.Point(520, 343);
+            this.comboBox3.Location = new System.Drawing.Point(508, 453);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(185, 31);
+            this.comboBox3.Size = new System.Drawing.Size(154, 31);
             this.comboBox3.TabIndex = 8;
             // 
             // RazervasyonAraBtn
@@ -60,7 +60,7 @@
             this.RazervasyonAraBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RazervasyonAraBtn.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RazervasyonAraBtn.ForeColor = System.Drawing.Color.White;
-            this.RazervasyonAraBtn.Location = new System.Drawing.Point(725, 332);
+            this.RazervasyonAraBtn.Location = new System.Drawing.Point(698, 435);
             this.RazervasyonAraBtn.Name = "RazervasyonAraBtn";
             this.RazervasyonAraBtn.Size = new System.Drawing.Size(134, 49);
             this.RazervasyonAraBtn.TabIndex = 9;
@@ -74,7 +74,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(81, 305);
+            this.label1.Location = new System.Drawing.Point(139, 420);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 25);
             this.label1.TabIndex = 10;
@@ -86,7 +86,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(297, 305);
+            this.label2.Location = new System.Drawing.Point(318, 420);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 25);
             this.label2.TabIndex = 11;
@@ -98,7 +98,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(515, 305);
+            this.label3.Location = new System.Drawing.Point(503, 420);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 25);
             this.label3.TabIndex = 12;
@@ -119,19 +119,21 @@
             this.Girisbtn.UseVisualStyleBackColor = false;
             this.Girisbtn.Click += new System.EventHandler(this.Girisbtn_Click);
             // 
-            // dateTimePicker1
+            // checkin
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(86, 347);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(178, 22);
-            this.dateTimePicker1.TabIndex = 15;
+            this.checkin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.checkin.Location = new System.Drawing.Point(144, 462);
+            this.checkin.Name = "checkin";
+            this.checkin.Size = new System.Drawing.Size(130, 22);
+            this.checkin.TabIndex = 15;
             // 
-            // dateTimePicker2
+            // checkout
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(302, 347);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(178, 22);
-            this.dateTimePicker2.TabIndex = 16;
+            this.checkout.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.checkout.Location = new System.Drawing.Point(323, 462);
+            this.checkout.Name = "checkout";
+            this.checkout.Size = new System.Drawing.Size(129, 22);
+            this.checkout.TabIndex = 16;
             // 
             // MainForm
             // 
@@ -139,8 +141,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Otel_yönetim_Sistemi.Properties.Resources.Best_Hotel_Website_Designs_yyyy;
             this.ClientSize = new System.Drawing.Size(973, 614);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.checkout);
+            this.Controls.Add(this.checkin);
             this.Controls.Add(this.Girisbtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -166,7 +168,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Girisbtn;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker checkin;
+        private System.Windows.Forms.DateTimePicker checkout;
     }
 }

@@ -21,7 +21,7 @@ namespace Otel_yönetim_Sistemi.Controller
             _userDAO = new UserDAO();
         }
 
-        public void RegisterUser(string name,string email,  string password)
+        public void RegisterUser(string name, string email, string password)
         {
             var newUser = new User
             {
@@ -46,7 +46,7 @@ namespace Otel_yönetim_Sistemi.Controller
             else
             {
                 return false;
-            }    
+            }
         }
         public bool UserExists(string email)
         {
@@ -71,8 +71,8 @@ namespace Otel_yönetim_Sistemi.Controller
                 existingUser.Surname = user.Surname;
                 existingUser.Telefon = user.Telefon;
                 existingUser.Email = user.Email;
-                // Update other fields as necessary
-                _userDAO.UpdateUser(existingUser); // Assuming RegisterUser can also update
+                existingUser.Role = user.Role;
+                _userDAO.UpdateUser(existingUser); 
                 return true;
             }
             else
@@ -81,10 +81,20 @@ namespace Otel_yönetim_Sistemi.Controller
                 return false;
             }
         }
+        public User GetUserById(MongoDB.Bson.ObjectId userId)
+        {
+            var users = _userDAO.GetAllUsers();
+            return users.FirstOrDefault(u => u.Id == userId);
+        }
         public bool DeleteUser(string userId)
         {
             return _userDAO.DeleteUser(userId);
 
+        }
+        public User GetUserByEmail(string email)
+        {
+            var users = _userDAO.GetAllUsers();
+            return users.FirstOrDefault(u => u.Email == email);
         }
     }
 }

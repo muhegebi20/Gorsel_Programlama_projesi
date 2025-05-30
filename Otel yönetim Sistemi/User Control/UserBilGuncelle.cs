@@ -59,6 +59,7 @@ namespace Otel_yönetim_Sistemi.User_Control
             string name = _name.Text;
             string surname = _surname.Text;
             string email = _email.Text;
+            string role = comboBox1.Text;
             string telefon = this.telefon.Text;
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(surname) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(telefon))
             {
@@ -79,7 +80,8 @@ namespace Otel_yönetim_Sistemi.User_Control
                 Name = name,
                 Surname = surname,
                 Email = email,
-                Telefon = telefon
+                Telefon = telefon,
+                Role = role
             };
             bool success = _userController.UpdateUser(updateUser);
             if (success)
@@ -101,6 +103,11 @@ namespace Otel_yönetim_Sistemi.User_Control
             MessageBox.Show("Kullanıcı başarıyla silindi.");
             dataGridView1.Rows.Clear(); // Clear existing rows
             LoadUserData();
+        }
+
+        private void Kullanci_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

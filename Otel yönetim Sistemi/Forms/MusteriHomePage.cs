@@ -52,7 +52,7 @@ namespace Otel_yönetim_Sistemi.Forms
         {
             panelMove.Visible = true;
             MovePanal(buttonRezervasyonlarimiGoruntule);
-            userBilGuncelle1.Visible = false;
+            kullanciYonetimi1.Visible = false;
             faturaGoruntu1.Visible = false;
             rezervasyonGoruntu1.Visible = true;
         }
@@ -61,7 +61,7 @@ namespace Otel_yönetim_Sistemi.Forms
         {
             panelMove.Visible = true;
             MovePanal(buttonFaturalarimiGoruntule);
-            userBilGuncelle1.Visible = false;
+            kullanciYonetimi1.Visible = false;
             faturaGoruntu1.Visible = true;
             rezervasyonGoruntu1.Visible = false;
         }
@@ -70,7 +70,7 @@ namespace Otel_yönetim_Sistemi.Forms
         {
             panelMove.Visible = true;
             MovePanal(buttonBilgilerimiGuncelle);
-            userBilGuncelle1.Visible = true;
+            kullanciYonetimi1.Visible = true;
             faturaGoruntu1.Visible = false;
             rezervasyonGoruntu1.Visible = false;
         }
