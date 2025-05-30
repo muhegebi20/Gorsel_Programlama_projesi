@@ -74,5 +74,10 @@ namespace Otel_yönetim_Sistemi.Forms
             faturaGoruntu1.Visible = false;
             rezervasyonGoruntu1.Visible = false;
         }
+
+        private void userBilGuncelle1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

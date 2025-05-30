@@ -21,11 +21,11 @@ namespace Otel_yönetim_Sistemi.Controller
             _userDAO = new UserDAO();
         }
 
-        public void RegisterUser(string username,string email,  string password)
+        public void RegisterUser(string name,string email,  string password)
         {
             var newUser = new User
             {
-                Username = username,
+                Name = name,
                 Email = email,
                 Password = BCrypt.Net.BCrypt.HashPassword(password)
             };
@@ -56,6 +56,35 @@ namespace Otel_yönetim_Sistemi.Controller
             };
             return _userDAO.UserExists(user);
         }
+        public List<User> GetAllUsers()
+        {
+            var users = _userDAO.GetAllUsers();
+            return users.ToList();
+        }
+        public bool UpdateUser(User user)
+        {
+            var users = _userDAO.GetAllUsers();
+            var existingUser = users.FirstOrDefault(u => u.Id == user.Id);
+            if (existingUser != null)
+            {
+                existingUser.Name = user.Name;
+                existingUser.Surname = user.Surname;
+                existingUser.Telefon = user.Telefon;
+                existingUser.Email = user.Email;
+                // Update other fields as necessary
+                _userDAO.UpdateUser(existingUser); // Assuming RegisterUser can also update
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı bulunamadı.");
+                return false;
+            }
+        }
+        public bool DeleteUser(string userId)
+        {
+            return _userDAO.DeleteUser(userId);
 
+        }
     }
 }

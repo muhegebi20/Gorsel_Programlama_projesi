@@ -54,7 +54,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonMusteriYonetimi);
             userControlFaturaHesapla2.Visible = false;
-            OdaControl.Visible = false;
+            userBilGuncelle1.Visible = true;
 
         }
 
@@ -63,8 +63,8 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonOdaYonetimi);
             userControlFaturaHesapla2.Visible = false;
-            OdaControl.Visible = true;
 
+            OdaControl.Visible = true;
 
         }
 
@@ -73,6 +73,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonRezervasyonislemleri);
             userControlFaturaHesapla2.Visible = false;
+            userBilGuncelle1.Visible = false;
             OdaControl.Visible = false;
         }
 
@@ -81,6 +82,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonFaturaHesapla);
             userControlFaturaHesapla2.Visible = true;
+            userBilGuncelle1.Visible = false;
             OdaControl.Visible = false;
         }
 
@@ -89,6 +91,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonRaporlariGoruntule);
             userControlFaturaHesapla2.Visible = false;
+            userBilGuncelle1.Visible = false;
             OdaControl.Visible = false;
         }
 

@@ -22,7 +22,7 @@ namespace Otel_yönetim_Sistemi.Forms
 
         private void btn_register_Click(object sender, EventArgs e)
         {
-            string username = _name.Text;
+            string name = _name.Text;
             string password = _password.Text;
             string email = _email.Text;
 
@@ -32,7 +32,7 @@ namespace Otel_yönetim_Sistemi.Forms
                 return;
             }
 
-            _controller.RegisterUser(username, email, password);
+            _controller.RegisterUser(name, email, password);
 
             MessageBox.Show("Kayıt başarılı!");
             this.Hide();

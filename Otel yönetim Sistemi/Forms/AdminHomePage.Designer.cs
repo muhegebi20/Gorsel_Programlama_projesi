@@ -53,6 +53,7 @@
             this.userControlFaturaHesapla2 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlFaturaHesapla1 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
+            this.userBilGuncelle1 = new Otel_yönetim_Sistemi.User_Control.UserBilGuncelle();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -301,7 +302,8 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.OdaControl);
+            this.panel5.Controls.Add(this.userBilGuncelle1);
+           
             this.panel5.Controls.Add(this.userControlFaturaHesapla2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(260, 192);
@@ -347,6 +349,16 @@
             this.userControlFaturaHesapla1.Size = new System.Drawing.Size(1029, 478);
             this.userControlFaturaHesapla1.TabIndex = 0;
             this.userControlFaturaHesapla1.Visible = false;
+            // 
+            // userBilGuncelle1
+            // 
+            this.userBilGuncelle1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userBilGuncelle1.Location = new System.Drawing.Point(0, 0);
+            this.userBilGuncelle1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userBilGuncelle1.Name = "userBilGuncelle1";
+            this.userBilGuncelle1.Size = new System.Drawing.Size(1029, 478);
+            this.userBilGuncelle1.TabIndex = 1;
+            this.userBilGuncelle1.Visible = false;
             // 
             // AdminHomePage
             // 
@@ -403,6 +415,6 @@
         private System.Windows.Forms.Panel panel5;
         private User_Control.UserControlFaturaHesapla userControlFaturaHesapla2;
         private System.Windows.Forms.Label labelDataTime;
-        private User_Control.OdaYonetim OdaControl;
+        private User_Control.UserBilGuncelle userBilGuncelle1;
     }
 }
