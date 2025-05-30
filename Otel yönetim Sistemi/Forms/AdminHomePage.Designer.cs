@@ -42,6 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabelExit = new System.Windows.Forms.LinkLabel();
+            this.labelDataTime = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelDataTime = new System.Windows.Forms.Label();
             this.userControlFaturaHesapla2 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.userControlFaturaHesapla1 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.panel1.SuspendLayout();
@@ -157,7 +157,7 @@
             this.buttonMusteriYonetimi.Name = "buttonMusteriYonetimi";
             this.buttonMusteriYonetimi.Size = new System.Drawing.Size(207, 57);
             this.buttonMusteriYonetimi.TabIndex = 1;
-            this.buttonMusteriYonetimi.Text = "Müşteri Yönetimi";
+            this.buttonMusteriYonetimi.Text = "Kullancı Yönetimi";
             this.buttonMusteriYonetimi.UseVisualStyleBackColor = true;
             this.buttonMusteriYonetimi.Click += new System.EventHandler(this.buttonMusteriYonetimi_Click);
             // 
@@ -225,6 +225,18 @@
             this.linkLabelExit.Text = "Çıkış Yap";
             this.linkLabelExit.VisitedLinkColor = System.Drawing.Color.MidnightBlue;
             this.linkLabelExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelExit_LinkClicked);
+            // 
+            // labelDataTime
+            // 
+            this.labelDataTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelDataTime.AutoSize = true;
+            this.labelDataTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataTime.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelDataTime.Location = new System.Drawing.Point(22, 59);
+            this.labelDataTime.Name = "labelDataTime";
+            this.labelDataTime.Size = new System.Drawing.Size(21, 23);
+            this.labelDataTime.TabIndex = 0;
+            this.labelDataTime.Text = "?";
             // 
             // panel4
             // 
@@ -298,18 +310,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // labelDataTime
-            // 
-            this.labelDataTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelDataTime.AutoSize = true;
-            this.labelDataTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDataTime.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.labelDataTime.Location = new System.Drawing.Point(22, 59);
-            this.labelDataTime.Name = "labelDataTime";
-            this.labelDataTime.Size = new System.Drawing.Size(21, 23);
-            this.labelDataTime.TabIndex = 0;
-            this.labelDataTime.Text = "?";
             // 
             // userControlFaturaHesapla2
             // 
