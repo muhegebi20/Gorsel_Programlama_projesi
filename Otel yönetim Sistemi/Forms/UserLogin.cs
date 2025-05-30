@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Otel_yonetim_Sistemi.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,10 @@ namespace Otel_yönetim_Sistemi.Forms
 {
     public partial class UserLogin : Form
     {
-        string selectedRole = "user"; // Varsayılan rol
+        private Controller.userController _controller = new Controller.userController();
+        string selectedRole = "";
+        public static MongoDB.Bson.ObjectId _id;
+        User currentUser;
         public UserLogin()
         {
             InitializeComponent();
@@ -34,30 +38,41 @@ namespace Otel_yönetim_Sistemi.Forms
             }
             return selectedRole;
         }
+        
 
         private void _login_Click(object sender, EventArgs e)
         {
             string email = user_email.Text;
             string password = user_password.Text;
             selectedRole = userRole();
+            if(string.IsNullOrEmpty(selectedRole))
+            {
+                MessageBox.Show("Lütfen bir rol seçin.");
+                return;
+            }
             string role = selectedRole;
             Controller.userController controller = new Controller.userController();
             if (controller.AuthenticateUser(email, password, role))
             {
+                currentUser = _controller.GetUserByEmail(email);
+                User.Current = currentUser;
+
                 Form nextForm;
                 if (role == "admin")
                 {
                     nextForm = new AdminHomePage();
+                    currentUser = _controller.GetUserByEmail(email);
                 }
                 else
                 {
                     nextForm = new MusteriHomePage();
+                currentUser = _controller.GetUserByEmail(email);
                 }
-
+                _id = currentUser.Id;
                 nextForm.FormClosed += (s, args) => this.Close();
-                AdminHomePage.UserName = email;
-                MusteriHomePage.UserName = email;
-                ResepsiyonHomePage.UserName = email;
+                AdminHomePage.UserName = currentUser.Name;
+                MusteriHomePage.UserName = currentUser.Name;
+                ResepsiyonHomePage.UserName = currentUser.Name;
                 MessageBox.Show("Giriş başarılı!");
                 nextForm.ShowDialog();
                 this.Hide();

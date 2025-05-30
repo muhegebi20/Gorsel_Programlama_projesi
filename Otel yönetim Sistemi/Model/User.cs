@@ -28,5 +28,7 @@ namespace Otel_yonetim_Sistemi.Model
         public string Surname { get; set; } = string.Empty;
         [BsonElement("telefon")]
         public string Telefon { get; set; } = string.Empty;
+
+        public static User Current { get; set; }
     }
 }

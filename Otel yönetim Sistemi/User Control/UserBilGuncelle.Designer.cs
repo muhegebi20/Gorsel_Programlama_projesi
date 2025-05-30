@@ -46,6 +46,8 @@
             this.lbl_username = new System.Windows.Forms.Label();
             this._name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Kullanci.SuspendLayout();
             this.SuspendLayout();
@@ -112,7 +114,9 @@
             // 
             // Kullanci
             // 
+            this.Kullanci.Controls.Add(this.comboBox1);
             this.Kullanci.Controls.Add(this.label3);
+            this.Kullanci.Controls.Add(this.label5);
             this.Kullanci.Controls.Add(this.label2);
             this.Kullanci.Controls.Add(this.btn_delete);
             this.Kullanci.Controls.Add(this.btn_update);
@@ -128,12 +132,13 @@
             this.Kullanci.TabIndex = 20;
             this.Kullanci.TabStop = false;
             this.Kullanci.Text = "KULLANICI";
+            this.Kullanci.Enter += new System.EventHandler(this.Kullanci_Enter);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(14, 234);
+            this.label3.Location = new System.Drawing.Point(14, 276);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 5;
@@ -143,7 +148,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(14, 171);
+            this.label2.Location = new System.Drawing.Point(14, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 5;
@@ -153,7 +158,7 @@
             // 
             this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(51, 344);
+            this.btn_delete.Location = new System.Drawing.Point(51, 390);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(174, 45);
             this.btn_delete.TabIndex = 17;
@@ -165,7 +170,7 @@
             // 
             this.btn_update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(51, 281);
+            this.btn_update.Location = new System.Drawing.Point(51, 330);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(174, 45);
             this.btn_update.TabIndex = 17;
@@ -177,7 +182,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(14, 111);
+            this.label1.Location = new System.Drawing.Point(14, 219);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 6;
@@ -185,7 +190,7 @@
             // 
             // telefon
             // 
-            this.telefon.Location = new System.Drawing.Point(94, 221);
+            this.telefon.Location = new System.Drawing.Point(94, 263);
             this.telefon.Multiline = true;
             this.telefon.Name = "telefon";
             this.telefon.Size = new System.Drawing.Size(150, 38);
@@ -193,7 +198,7 @@
             // 
             // _surname
             // 
-            this._surname.Location = new System.Drawing.Point(94, 158);
+            this._surname.Location = new System.Drawing.Point(94, 99);
             this._surname.Multiline = true;
             this._surname.Name = "_surname";
             this._surname.Size = new System.Drawing.Size(150, 38);
@@ -201,7 +206,7 @@
             // 
             // _email
             // 
-            this._email.Location = new System.Drawing.Point(94, 99);
+            this._email.Location = new System.Drawing.Point(94, 207);
             this._email.Multiline = true;
             this._email.Name = "_email";
             this._email.Size = new System.Drawing.Size(150, 37);
@@ -234,6 +239,28 @@
             this.label4.Size = new System.Drawing.Size(328, 22);
             this.label4.TabIndex = 22;
             this.label4.Text = "Güncellemek istediğiniz Kullanıcı seçiniz";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "admin",
+            "user",
+            "resepsiyon"});
+            this.comboBox1.Location = new System.Drawing.Point(94, 160);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(150, 24);
+            this.comboBox1.TabIndex = 18;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(14, 160);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 16);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Role";
             // 
             // UserBilGuncelle
             // 
@@ -272,5 +299,7 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -17,7 +17,7 @@ namespace Otel_yönetim_Sistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run( new MainForm());
+            Application.Run( new UserLogin());
         }
     }
 }
