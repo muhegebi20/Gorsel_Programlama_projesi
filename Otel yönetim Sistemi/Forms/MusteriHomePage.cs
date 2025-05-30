@@ -49,18 +49,27 @@ namespace Otel_yönetim_Sistemi.Forms
         {
             panelMove.Visible = true;
             MovePanal(buttonRezervasyonlarimiGoruntule);
+            userBilGuncelle1.Visible = false;
+            faturaGoruntu1.Visible = false;
+            rezervasyonGoruntu1.Visible = true;
         }
 
         private void buttonFaturalarimiGoruntule_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
             MovePanal(buttonFaturalarimiGoruntule);
+            userBilGuncelle1.Visible = false;
+            faturaGoruntu1.Visible = true;
+            rezervasyonGoruntu1.Visible = false;
         }
 
         private void buttonBilgilerimiGuncelle_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
             MovePanal(buttonBilgilerimiGuncelle);
+            userBilGuncelle1.Visible = true;
+            faturaGoruntu1.Visible = false;
+            rezervasyonGoruntu1.Visible = false;
         }
     }
 }

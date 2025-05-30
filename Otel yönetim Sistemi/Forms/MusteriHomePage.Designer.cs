@@ -38,22 +38,26 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabelExit = new System.Windows.Forms.LinkLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelDataTime = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.faturaGoruntu1 = new Otel_yönetim_Sistemi.User_Control.FaturaGoruntu();
+            this.userBilGuncelle1 = new Otel_yönetim_Sistemi.User_Control.UserBilGuncelle();
+            this.rezervasyonGoruntu1 = new Otel_yönetim_Sistemi.User_Control.RezervasyonGoruntu();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,7 +71,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(260, 696);
+            this.panel1.Size = new System.Drawing.Size(260, 670);
             this.panel1.TabIndex = 1;
             // 
             // panelMove
@@ -159,17 +163,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Otel Yönetim";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::Otel_yönetim_Sistemi.Properties.Resources.home_icon_silhouette;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 96);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
@@ -180,7 +173,7 @@
             this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(260, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(634, 192);
+            this.panel4.Size = new System.Drawing.Size(1029, 192);
             this.panel4.TabIndex = 2;
             // 
             // label2
@@ -216,7 +209,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(634, 93);
+            this.panel2.Size = new System.Drawing.Size(1029, 93);
             this.panel2.TabIndex = 0;
             // 
             // linkLabelExit
@@ -228,7 +221,7 @@
             this.linkLabelExit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelExit.ForeColor = System.Drawing.Color.MidnightBlue;
             this.linkLabelExit.LinkColor = System.Drawing.Color.MidnightBlue;
-            this.linkLabelExit.Location = new System.Drawing.Point(502, 57);
+            this.linkLabelExit.Location = new System.Drawing.Point(897, 57);
             this.linkLabelExit.Name = "linkLabelExit";
             this.linkLabelExit.Size = new System.Drawing.Size(101, 23);
             this.linkLabelExit.TabIndex = 0;
@@ -236,17 +229,6 @@
             this.linkLabelExit.Text = "Çıkış Yap";
             this.linkLabelExit.VisitedLinkColor = System.Drawing.Color.MidnightBlue;
             this.linkLabelExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelExit_LinkClicked);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::Otel_yönetim_Sistemi.Properties.Resources.office_man;
-            this.pictureBox2.Location = new System.Drawing.Point(451, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 75);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // labelDataTime
             // 
@@ -262,22 +244,77 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.rezervasyonGoruntu1);
+            this.panel5.Controls.Add(this.faturaGoruntu1);
+            this.panel5.Controls.Add(this.userBilGuncelle1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(260, 192);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(634, 504);
+            this.panel5.Size = new System.Drawing.Size(1029, 478);
             this.panel5.TabIndex = 3;
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Image = global::Otel_yönetim_Sistemi.Properties.Resources.office_man;
+            this.pictureBox2.Location = new System.Drawing.Point(846, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 75);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::Otel_yönetim_Sistemi.Properties.Resources.home_icon_silhouette;
+            this.pictureBox1.Location = new System.Drawing.Point(71, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(112, 96);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // faturaGoruntu1
+            // 
+            this.faturaGoruntu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.faturaGoruntu1.Location = new System.Drawing.Point(0, 0);
+            this.faturaGoruntu1.Margin = new System.Windows.Forms.Padding(4);
+            this.faturaGoruntu1.Name = "faturaGoruntu1";
+            this.faturaGoruntu1.Size = new System.Drawing.Size(1029, 478);
+            this.faturaGoruntu1.TabIndex = 1;
+            this.faturaGoruntu1.Visible = false;
+            // 
+            // userBilGuncelle1
+            // 
+            this.userBilGuncelle1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userBilGuncelle1.Location = new System.Drawing.Point(0, 0);
+            this.userBilGuncelle1.Margin = new System.Windows.Forms.Padding(4);
+            this.userBilGuncelle1.Name = "userBilGuncelle1";
+            this.userBilGuncelle1.Size = new System.Drawing.Size(1029, 478);
+            this.userBilGuncelle1.TabIndex = 0;
+            this.userBilGuncelle1.Visible = false;
+            // 
+            // rezervasyonGoruntu1
+            // 
+            this.rezervasyonGoruntu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rezervasyonGoruntu1.Location = new System.Drawing.Point(0, 0);
+            this.rezervasyonGoruntu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rezervasyonGoruntu1.Name = "rezervasyonGoruntu1";
+            this.rezervasyonGoruntu1.Size = new System.Drawing.Size(1029, 478);
+            this.rezervasyonGoruntu1.TabIndex = 2;
+            this.rezervasyonGoruntu1.Visible = false;
+            // 
             // MusteriHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(894, 696);
+            this.ClientSize = new System.Drawing.Size(1289, 670);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -292,12 +329,13 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -322,5 +360,8 @@
         private System.Windows.Forms.Label labelDataTime;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Timer timer1;
+        private User_Control.UserBilGuncelle userBilGuncelle1;
+        private User_Control.FaturaGoruntu faturaGoruntu1;
+        private User_Control.RezervasyonGoruntu rezervasyonGoruntu1;
     }
 }
