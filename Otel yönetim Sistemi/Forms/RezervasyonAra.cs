@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Otel_yönetim_Sistemi.Forms
 {
-    public partial class RoomListForm: Form
+    public partial class RezervasyonAra : Form
     {
-        public RoomListForm()
+        public RezervasyonAra()
         {
             InitializeComponent();
+        }
+
+        private void Geribtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -55,10 +55,12 @@ namespace Otel_yönetim_Sistemi.Forms
                 }
 
                 nextForm.FormClosed += (s, args) => this.Close();
-                nextForm.Show();
-                this.Hide();
-
+                AdminHomePage.UserName = email;
+                MusteriHomePage.UserName = email;
+                ResepsiyonHomePage.UserName = email;
                 MessageBox.Show("Giriş başarılı!");
+                nextForm.ShowDialog();
+                this.Hide();
             }
             else
             {
@@ -68,9 +70,16 @@ namespace Otel_yönetim_Sistemi.Forms
 
         private void lnk_register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            RegisterUser registerUserForm = new RegisterUser();
-            registerUserForm.Show();
-            this.Hide(); // Giriş formunu gizle
+ 
+            this.Hide();
+            RegisterUser userRegister = new RegisterUser();
+            userRegister.ShowDialog();
+            this.Close();
+        }
+
+        private void login_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
