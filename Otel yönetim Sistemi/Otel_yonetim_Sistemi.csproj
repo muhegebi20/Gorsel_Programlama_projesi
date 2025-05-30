@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -149,12 +149,6 @@
   <ItemGroup>
     <Compile Include="Controller\roomController.cs" />
     <Compile Include="dao\RoomDAO.cs" />
-    <Compile Include="Forms\AddRooms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddRooms.Designer.cs">
-      <DependentUpon>AddRooms.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controller\userController.cs" />
     <Compile Include="dao\Repository.cs" />
     <Compile Include="dao\UserDAO.cs" />
@@ -163,6 +157,12 @@
     </Compile>
     <Compile Include="Forms\AdminHomePage.Designer.cs">
       <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MusteriHomePage.cs">
       <SubType>Form</SubType>
@@ -182,23 +182,11 @@
     <Compile Include="Forms\ResepsiyonHomePage.Designer.cs">
       <DependentUpon>ResepsiyonHomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RoomListForm.cs">
+    <Compile Include="Forms\RezervasyonAra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RoomListForm.Designer.cs">
-      <DependentUpon>RoomListForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\UpdateUserInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\UpdateUserInfo.Designer.cs">
-      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Roomdetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Roomdetails.Designer.cs">
-      <DependentUpon>Roomdetails.cs</DependentUpon>
+    <Compile Include="Forms\RezervasyonAra.Designer.cs">
+      <DependentUpon>RezervasyonAra.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserLogin.cs">
       <SubType>Form</SubType>
@@ -222,6 +210,12 @@
     <Compile Include="User Control\KullanciYonetimi.Designer.cs">
       <DependentUpon>KullanciYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Control\OdaYonetim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\OdaYonetim.Designer.cs">
+      <DependentUpon>OdaYonetim.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\RezervasyonGoruntu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,11 +236,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\AddRooms.resx">
-      <DependentUpon>AddRooms.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminHomePage.resx">
       <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MusteriHomePage.resx">
       <DependentUpon>MusteriHomePage.cs</DependentUpon>
@@ -257,14 +251,8 @@
     <EmbeddedResource Include="Forms\ResepsiyonHomePage.resx">
       <DependentUpon>ResepsiyonHomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RoomListForm.resx">
-      <DependentUpon>RoomListForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UpdateUserInfo.resx">
-      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Roomdetails.resx">
-      <DependentUpon>Roomdetails.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\RezervasyonAra.resx">
+      <DependentUpon>RezervasyonAra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserLogin.resx">
       <DependentUpon>UserLogin.cs</DependentUpon>
@@ -284,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\KullanciYonetimi.resx">
       <DependentUpon>KullanciYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\OdaYonetim.resx">
+      <DependentUpon>OdaYonetim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\RezervasyonGoruntu.resx">
       <DependentUpon>RezervasyonGoruntu.cs</DependentUpon>
@@ -312,6 +303,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="hotel.ico" />
+    <None Include="Resources\Best Hotel Website Designs yyyy.JPG" />
+    <None Include="Resources\Best Hotel Website Designs yeniioioio.JPG" />
+    <None Include="Resources\Best Hotel Website Designs yeni.jpg" />
+    <None Include="Resources\Best Hotel Website Designs.jpg" />
     <None Include="Resources\office-man.png" />
     <None Include="Resources\home-icon-silhouette.png" />
     <None Include="Resources\1.png" />

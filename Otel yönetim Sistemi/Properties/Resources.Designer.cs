@@ -73,6 +73,46 @@ namespace Otel_yönetim_Sistemi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Best_Hotel_Website_Designs {
+            get {
+                object obj = ResourceManager.GetObject("Best Hotel Website Designs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Best_Hotel_Website_Designs_yeni {
+            get {
+                object obj = ResourceManager.GetObject("Best Hotel Website Designs yeni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Best_Hotel_Website_Designs_yeniioioio {
+            get {
+                object obj = ResourceManager.GetObject("Best Hotel Website Designs yeniioioio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Best_Hotel_Website_Designs_yyyy {
+            get {
+                object obj = ResourceManager.GetObject("Best Hotel Website Designs yyyy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cross {
             get {
                 object obj = ResourceManager.GetObject("cross", resourceCulture);
