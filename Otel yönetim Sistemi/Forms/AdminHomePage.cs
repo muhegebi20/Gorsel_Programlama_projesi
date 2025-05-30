@@ -51,6 +51,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonMusteriYonetimi);
             userControlFaturaHesapla2.Visible = false;
+            userBilGuncelle1.Visible = true;
 
         }
 
@@ -59,10 +60,12 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonOdaYonetimi);
             userControlFaturaHesapla2.Visible = false;
+            userBilGuncelle1.Visible = false;
 
-            // Show the AddRoom form
+
+           
             AddRooms addRoomForm = new AddRooms();
-            addRoomForm.Show(); // Use ShowDialog() for modal, or Show() for non-modal
+            addRoomForm.Show();
         }
 
         private void buttonRezervasyonislemleri_Click(object sender, EventArgs e)
@@ -70,6 +73,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonRezervasyonislemleri);
             userControlFaturaHesapla2.Visible = false;
+            userBilGuncelle1.Visible = false;
         }
 
         private void buttonFaturaHesapla_Click(object sender, EventArgs e)
@@ -77,6 +81,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonFaturaHesapla);
             userControlFaturaHesapla2.Visible = true;
+            userBilGuncelle1.Visible = false;
         }
 
         private void buttonRaporlariGoruntule_Click(object sender, EventArgs e)
@@ -84,6 +89,7 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonRaporlariGoruntule);
             userControlFaturaHesapla2.Visible = false;
+            userBilGuncelle1.Visible = false;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)

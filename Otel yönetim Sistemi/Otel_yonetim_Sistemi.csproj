@@ -188,12 +188,6 @@
     <Compile Include="Forms\RoomListForm.Designer.cs">
       <DependentUpon>RoomListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UpdateUserInfo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\UpdateUserInfo.Designer.cs">
-      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Roomdetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,9 +253,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RoomListForm.resx">
       <DependentUpon>RoomListForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UpdateUserInfo.resx">
-      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Roomdetails.resx">
       <DependentUpon>Roomdetails.cs</DependentUpon>

@@ -34,22 +34,26 @@
             this.user_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user_surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user_telefon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Kullanci = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this._password = new System.Windows.Forms.TextBox();
+            this.telefon = new System.Windows.Forms.TextBox();
+            this._surname = new System.Windows.Forms.TextBox();
             this._email = new System.Windows.Forms.TextBox();
             this.lbl_username = new System.Windows.Forms.Label();
             this._name = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.Kullanci.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this._id,
@@ -59,10 +63,12 @@
             this.user_telefon});
             this.dataGridView1.Location = new System.Drawing.Point(328, 77);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(677, 99);
+            this.dataGridView1.Size = new System.Drawing.Size(681, 414);
             this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // _id
             // 
@@ -77,6 +83,7 @@
             this.user_email.HeaderText = "Email";
             this.user_email.MinimumWidth = 6;
             this.user_email.Name = "user_email";
+            this.user_email.ReadOnly = true;
             this.user_email.Width = 125;
             // 
             // user_name
@@ -84,6 +91,7 @@
             this.user_name.HeaderText = "Name";
             this.user_name.MinimumWidth = 6;
             this.user_name.Name = "user_name";
+            this.user_name.ReadOnly = true;
             this.user_name.Width = 125;
             // 
             // user_surname
@@ -91,6 +99,7 @@
             this.user_surname.HeaderText = "Surname";
             this.user_surname.MinimumWidth = 6;
             this.user_surname.Name = "user_surname";
+            this.user_surname.ReadOnly = true;
             this.user_surname.Width = 125;
             // 
             // user_telefon
@@ -98,25 +107,27 @@
             this.user_telefon.HeaderText = "Telefon";
             this.user_telefon.MinimumWidth = 6;
             this.user_telefon.Name = "user_telefon";
+            this.user_telefon.ReadOnly = true;
             this.user_telefon.Width = 125;
             // 
-            // groupBox1
+            // Kullanci
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.btn_update);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this._password);
-            this.groupBox1.Controls.Add(this._email);
-            this.groupBox1.Controls.Add(this.lbl_username);
-            this.groupBox1.Controls.Add(this._name);
-            this.groupBox1.Location = new System.Drawing.Point(24, 40);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(280, 399);
-            this.groupBox1.TabIndex = 20;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.Kullanci.Controls.Add(this.label3);
+            this.Kullanci.Controls.Add(this.label2);
+            this.Kullanci.Controls.Add(this.btn_delete);
+            this.Kullanci.Controls.Add(this.btn_update);
+            this.Kullanci.Controls.Add(this.label1);
+            this.Kullanci.Controls.Add(this.telefon);
+            this.Kullanci.Controls.Add(this._surname);
+            this.Kullanci.Controls.Add(this._email);
+            this.Kullanci.Controls.Add(this.lbl_username);
+            this.Kullanci.Controls.Add(this._name);
+            this.Kullanci.Location = new System.Drawing.Point(24, 40);
+            this.Kullanci.Name = "Kullanci";
+            this.Kullanci.Size = new System.Drawing.Size(280, 451);
+            this.Kullanci.TabIndex = 20;
+            this.Kullanci.TabStop = false;
+            this.Kullanci.Text = "KULLANICI";
             // 
             // label3
             // 
@@ -138,16 +149,29 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Surname";
             // 
+            // btn_delete
+            // 
+            this.btn_delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_delete.ForeColor = System.Drawing.Color.White;
+            this.btn_delete.Location = new System.Drawing.Point(51, 344);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(174, 45);
+            this.btn_delete.TabIndex = 17;
+            this.btn_delete.Text = "DELETE";
+            this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
             // btn_update
             // 
             this.btn_update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(54, 298);
+            this.btn_update.Location = new System.Drawing.Point(51, 281);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(174, 51);
+            this.btn_update.Size = new System.Drawing.Size(174, 45);
             this.btn_update.TabIndex = 17;
             this.btn_update.Text = "UPDATE";
             this.btn_update.UseVisualStyleBackColor = false;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // label1
             // 
@@ -159,21 +183,21 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Email";
             // 
-            // textBox1
+            // telefon
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 221);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 38);
-            this.textBox1.TabIndex = 2;
+            this.telefon.Location = new System.Drawing.Point(94, 221);
+            this.telefon.Multiline = true;
+            this.telefon.Name = "telefon";
+            this.telefon.Size = new System.Drawing.Size(150, 38);
+            this.telefon.TabIndex = 2;
             // 
-            // _password
+            // _surname
             // 
-            this._password.Location = new System.Drawing.Point(94, 158);
-            this._password.Multiline = true;
-            this._password.Name = "_password";
-            this._password.Size = new System.Drawing.Size(150, 38);
-            this._password.TabIndex = 2;
+            this._surname.Location = new System.Drawing.Point(94, 158);
+            this._surname.Multiline = true;
+            this._surname.Name = "_surname";
+            this._surname.Size = new System.Drawing.Size(150, 38);
+            this._surname.TabIndex = 2;
             // 
             // _email
             // 
@@ -201,18 +225,30 @@
             this._name.Size = new System.Drawing.Size(150, 35);
             this._name.TabIndex = 4;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(324, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(328, 22);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Güncellemek istediğiniz Kullanıcı seçiniz";
+            // 
             // UserBilGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Kullanci);
             this.Name = "UserBilGuncelle";
             this.Size = new System.Drawing.Size(1106, 528);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Kullanci.ResumeLayout(false);
+            this.Kullanci.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -224,15 +260,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn user_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn user_surname;
         private System.Windows.Forms.DataGridViewTextBoxColumn user_telefon;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Kullanci;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox _password;
+        private System.Windows.Forms.TextBox telefon;
+        private System.Windows.Forms.TextBox _surname;
         private System.Windows.Forms.TextBox _email;
         private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.TextBox _name;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_update;
     }
 }
