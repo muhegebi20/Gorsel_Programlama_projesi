@@ -39,7 +39,7 @@ namespace Otel_yönetim_Sistemi.Forms
         {
             List<Room> roomTable = roomController.getAllRooms(); // Fetch data from DB or other source
             
-            dataGridViewRooms.DataSource = roomTable;
+            dataGridView1.DataSource = roomTable;
         }
         private void AddActionButtons()
         {
@@ -51,7 +51,7 @@ namespace Otel_yönetim_Sistemi.Forms
                 Text = "Edit",
                 UseColumnTextForButtonValue = true
             };
-            dataGridViewRooms.Columns.Add(editButton);
+            dataGridView1.Columns.Add(editButton);
 
             // Add Delete button
             DataGridViewButtonColumn deleteButton = new DataGridViewButtonColumn
@@ -61,7 +61,7 @@ namespace Otel_yönetim_Sistemi.Forms
                 Text = "Delete",
                 UseColumnTextForButtonValue = true
             };
-            dataGridViewRooms.Columns.Add(deleteButton);
+            dataGridView1.Columns.Add(deleteButton);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
