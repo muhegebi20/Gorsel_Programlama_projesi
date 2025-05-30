@@ -283,6 +283,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Roomdetails";
             this.Text = "Roomdetails";
+            this.Load += new System.EventHandler(this.Roomdetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
