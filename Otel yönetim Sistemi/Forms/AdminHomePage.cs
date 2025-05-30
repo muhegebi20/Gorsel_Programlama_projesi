@@ -12,7 +12,7 @@ namespace Otel_yönetim_Sistemi.Forms
 {
     public partial class AdminHomePage : Form
     {
-        public string UserName;
+        public static string UserName;
         public AdminHomePage()
         {
             InitializeComponent();
@@ -42,6 +42,9 @@ namespace Otel_yönetim_Sistemi.Forms
             if (result == DialogResult.Yes)
             {
                 timer1.Stop();
+                this.Hide();
+                UserLogin userLoginForm = new UserLogin();
+                userLoginForm.ShowDialog();
                 this.Close();
             }
         }
@@ -60,12 +63,9 @@ namespace Otel_yönetim_Sistemi.Forms
             panelMove.Visible = true;
             MovePanal(buttonOdaYonetimi);
             userControlFaturaHesapla2.Visible = false;
-            userBilGuncelle1.Visible = false;
 
+            OdaControl.Visible = true;
 
-           
-            AddRooms addRoomForm = new AddRooms();
-            addRoomForm.Show();
         }
 
         private void buttonRezervasyonislemleri_Click(object sender, EventArgs e)
@@ -74,6 +74,7 @@ namespace Otel_yönetim_Sistemi.Forms
             MovePanal(buttonRezervasyonislemleri);
             userControlFaturaHesapla2.Visible = false;
             userBilGuncelle1.Visible = false;
+            OdaControl.Visible = false;
         }
 
         private void buttonFaturaHesapla_Click(object sender, EventArgs e)
@@ -82,6 +83,7 @@ namespace Otel_yönetim_Sistemi.Forms
             MovePanal(buttonFaturaHesapla);
             userControlFaturaHesapla2.Visible = true;
             userBilGuncelle1.Visible = false;
+            OdaControl.Visible = false;
         }
 
         private void buttonRaporlariGoruntule_Click(object sender, EventArgs e)
@@ -90,6 +92,7 @@ namespace Otel_yönetim_Sistemi.Forms
             MovePanal(buttonRaporlariGoruntule);
             userControlFaturaHesapla2.Visible = false;
             userBilGuncelle1.Visible = false;
+            OdaControl.Visible = false;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -98,6 +101,11 @@ namespace Otel_yönetim_Sistemi.Forms
         }
 
         private void userControlFaturaHesapla2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void odaYonetim1_Load(object sender, EventArgs e)
         {
 
         }

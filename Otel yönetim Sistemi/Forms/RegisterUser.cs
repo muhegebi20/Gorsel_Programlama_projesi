@@ -35,16 +35,19 @@ namespace Otel_yönetim_Sistemi.Forms
             _controller.RegisterUser(name, email, password);
 
             MessageBox.Show("Kayıt başarılı!");
+            this.Hide();
             UserLogin userLoginForm = new UserLogin();
-            this.Hide(); // Kayıt formunu gizle
-            userLoginForm.Show();
+           
+            userLoginForm.ShowDialog();
+            this.Close();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             UserLogin userLoginForm = new UserLogin();
-            userLoginForm.Show();
-            this.Hide(); // Kayıt formunu gizle
+            userLoginForm.ShowDialog();
+            this.Close(); 
         }
     }
 }

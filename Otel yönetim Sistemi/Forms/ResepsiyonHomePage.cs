@@ -12,7 +12,7 @@ namespace Otel_yönetim_Sistemi.Forms
 {
     public partial class ResepsiyonHomePage : Form
     {
-        public string UserName;
+        public static string  UserName;
         public ResepsiyonHomePage()
         {
             InitializeComponent();
@@ -35,6 +35,9 @@ namespace Otel_yönetim_Sistemi.Forms
             if (result == DialogResult.Yes)
             {
                 timer1.Stop();
+                this.Hide();
+                UserLogin userLoginForm = new UserLogin();
+                userLoginForm.ShowDialog();
                 this.Close();
             }
         }

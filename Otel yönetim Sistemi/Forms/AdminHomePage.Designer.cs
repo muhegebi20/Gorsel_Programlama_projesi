@@ -49,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.OdaControl = new Otel_yönetim_Sistemi.User_Control.OdaYonetim();
             this.userControlFaturaHesapla2 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlFaturaHesapla1 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
@@ -242,7 +243,7 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::Otel_yönetim_Sistemi.Properties.Resources.office_man;
-            this.pictureBox2.Location = new System.Drawing.Point(923, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(846, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -302,12 +303,23 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.userBilGuncelle1);
+           
             this.panel5.Controls.Add(this.userControlFaturaHesapla2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(260, 192);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1029, 478);
             this.panel5.TabIndex = 0;
+            // 
+            // OdaControl
+            // 
+            this.OdaControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OdaControl.Location = new System.Drawing.Point(0, 0);
+            this.OdaControl.Margin = new System.Windows.Forms.Padding(4);
+            this.OdaControl.Name = "OdaControl";
+            this.OdaControl.Size = new System.Drawing.Size(1029, 478);
+            this.OdaControl.TabIndex = 1;
+            this.OdaControl.Visible = false;
             // 
             // userControlFaturaHesapla2
             // 
