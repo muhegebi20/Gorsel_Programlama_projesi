@@ -46,34 +46,28 @@
             this.combo_room_type = new System.Windows.Forms.ComboBox();
             this.combo_status = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Capacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.up_datagrid = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.up_btn_update = new System.Windows.Forms.Button();
+            this.up_room_status = new System.Windows.Forms.ComboBox();
+            this.up_room_type = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.up_capacity = new System.Windows.Forms.TextBox();
+            this.up_room_price = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this._Id = new System.Windows.Forms.Label();
+            this.up_room_no = new System.Windows.Forms.TextBox();
+            this.up_Id = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.all_amenities = new System.Windows.Forms.Label();
             this.tabControlFaturalar.SuspendLayout();
             this.tabPageFaturaEkle.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.up_datagrid)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -257,7 +251,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.up_datagrid);
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
@@ -267,87 +261,39 @@
             this.tabPage2.Text = "Oda Güncelle";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // up_datagrid
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Type,
-            this.Price,
-            this.Capacity,
-            this.Status,
-            this.Edit,
-            this.Delete});
-            this.dataGridView1.Location = new System.Drawing.Point(369, 15);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(618, 378);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // Type
-            // 
-            this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            // 
-            // Capacity
-            // 
-            this.Capacity.HeaderText = "Capacity";
-            this.Capacity.MinimumWidth = 6;
-            this.Capacity.Name = "Capacity";
-            this.Capacity.ReadOnly = true;
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            // 
-            // Edit
-            // 
-            this.Edit.HeaderText = "Edit";
-            this.Edit.MinimumWidth = 6;
-            this.Edit.Name = "Edit";
-            this.Edit.ReadOnly = true;
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.ReadOnly = true;
+            this.up_datagrid.AllowUserToAddRows = false;
+            this.up_datagrid.AllowUserToDeleteRows = false;
+            this.up_datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.up_datagrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.up_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.up_datagrid.Location = new System.Drawing.Point(369, 15);
+            this.up_datagrid.Name = "up_datagrid";
+            this.up_datagrid.ReadOnly = true;
+            this.up_datagrid.RowHeadersWidth = 51;
+            this.up_datagrid.RowTemplate.Height = 24;
+            this.up_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.up_datagrid.Size = new System.Drawing.Size(587, 378);
+            this.up_datagrid.TabIndex = 7;
+            this.up_datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.up_datagrid_CellContentClick);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.up_btn_update);
+            this.groupBox1.Controls.Add(this.up_room_status);
+            this.groupBox1.Controls.Add(this.up_room_type);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.up_capacity);
+            this.groupBox1.Controls.Add(this.up_room_price);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this._Id);
+            this.groupBox1.Controls.Add(this.up_room_no);
+            this.groupBox1.Controls.Add(this.up_Id);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Location = new System.Drawing.Point(39, 15);
             this.groupBox1.Name = "groupBox1";
@@ -356,39 +302,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Update info";
             // 
-            // button1
+            // up_btn_update
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(57, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 40);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "UPDATE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.up_btn_update.BackColor = System.Drawing.Color.LimeGreen;
+            this.up_btn_update.ForeColor = System.Drawing.Color.White;
+            this.up_btn_update.Location = new System.Drawing.Point(71, 323);
+            this.up_btn_update.Name = "up_btn_update";
+            this.up_btn_update.Size = new System.Drawing.Size(125, 40);
+            this.up_btn_update.TabIndex = 2;
+            this.up_btn_update.Text = "UPDATE";
+            this.up_btn_update.UseVisualStyleBackColor = false;
+            this.up_btn_update.Click += new System.EventHandler(this.up_btn_update_Click);
             // 
-            // comboBox2
+            // up_room_status
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.up_room_status.FormattingEnabled = true;
+            this.up_room_status.Items.AddRange(new object[] {
             "Available",
             "Occupied"});
-            this.comboBox2.Location = new System.Drawing.Point(140, 139);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 6;
+            this.up_room_status.Location = new System.Drawing.Point(140, 139);
+            this.up_room_status.Name = "up_room_status";
+            this.up_room_status.Size = new System.Drawing.Size(121, 24);
+            this.up_room_status.TabIndex = 6;
             // 
-            // comboBox1
+            // up_room_type
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.up_room_type.FormattingEnabled = true;
+            this.up_room_type.Items.AddRange(new object[] {
             "Standart",
             "Deluxe",
             "Suite"});
-            this.comboBox1.Location = new System.Drawing.Point(140, 74);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 6;
+            this.up_room_type.Location = new System.Drawing.Point(140, 74);
+            this.up_room_type.Name = "up_room_type";
+            this.up_room_type.Size = new System.Drawing.Size(121, 24);
+            this.up_room_type.TabIndex = 6;
             // 
             // label8
             // 
@@ -442,19 +389,19 @@
             this.label12.TabIndex = 4;
             this.label12.Text = "Room Status";
             // 
-            // textBox4
+            // up_capacity
             // 
-            this.textBox4.Location = new System.Drawing.Point(140, 278);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 22);
-            this.textBox4.TabIndex = 1;
+            this.up_capacity.Location = new System.Drawing.Point(140, 278);
+            this.up_capacity.Name = "up_capacity";
+            this.up_capacity.Size = new System.Drawing.Size(121, 22);
+            this.up_capacity.TabIndex = 1;
             // 
-            // textBox2
+            // up_room_price
             // 
-            this.textBox2.Location = new System.Drawing.Point(140, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 22);
-            this.textBox2.TabIndex = 1;
+            this.up_room_price.Location = new System.Drawing.Point(140, 232);
+            this.up_room_price.Name = "up_room_price";
+            this.up_room_price.Size = new System.Drawing.Size(121, 22);
+            this.up_room_price.TabIndex = 1;
             // 
             // label13
             // 
@@ -465,21 +412,21 @@
             this.label13.TabIndex = 2;
             this.label13.Text = "Room Type";
             // 
-            // textBox1
+            // up_room_no
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
-            this.textBox1.TabIndex = 1;
+            this.up_room_no.Location = new System.Drawing.Point(140, 189);
+            this.up_room_no.Name = "up_room_no";
+            this.up_room_no.Size = new System.Drawing.Size(121, 22);
+            this.up_room_no.TabIndex = 1;
             // 
-            // _Id
+            // up_Id
             // 
-            this._Id.AutoSize = true;
-            this._Id.Location = new System.Drawing.Point(172, 40);
-            this._Id.Name = "_Id";
-            this._Id.Size = new System.Drawing.Size(10, 16);
-            this._Id.TabIndex = 0;
-            this._Id.Text = ".";
+            this.up_Id.AutoSize = true;
+            this.up_Id.Location = new System.Drawing.Point(137, 40);
+            this.up_Id.Name = "up_Id";
+            this.up_Id.Size = new System.Drawing.Size(10, 16);
+            this.up_Id.TabIndex = 0;
+            this.up_Id.Text = ".";
             // 
             // label14
             // 
@@ -504,12 +451,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControlFaturalar);
             this.Name = "OdaYonetim";
-            this.Size = new System.Drawing.Size(1106, 528);
+            this.Size = new System.Drawing.Size(1257, 541);
             this.tabControlFaturalar.ResumeLayout(false);
             this.tabPageFaturaEkle.ResumeLayout(false);
             this.tabPageFaturaEkle.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.up_datagrid)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -537,28 +484,22 @@
         private System.Windows.Forms.ComboBox combo_room_type;
         private System.Windows.Forms.ComboBox combo_status;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button up_btn_update;
+        private System.Windows.Forms.ComboBox up_room_status;
+        private System.Windows.Forms.ComboBox up_room_type;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox up_capacity;
+        private System.Windows.Forms.TextBox up_room_price;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label _Id;
+        private System.Windows.Forms.TextBox up_room_no;
+        private System.Windows.Forms.Label up_Id;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Capacity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
-        private System.Windows.Forms.DataGridViewButtonColumn Edit;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridView up_datagrid;
         private System.Windows.Forms.Label all_amenities;
     }
 }
