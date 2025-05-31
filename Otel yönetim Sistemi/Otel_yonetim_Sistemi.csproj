@@ -194,6 +194,7 @@
     <Compile Include="Forms\UserLogin.Designer.cs">
       <DependentUpon>UserLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Reservations.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />

@@ -30,7 +30,7 @@
         {
             this.tabControlFaturalar = new System.Windows.Forms.TabControl();
             this.tabPageFaturaEkle = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.add_room = new System.Windows.Forms.Button();
             this.btn_add_amenity = new System.Windows.Forms.Button();
             this.show_amenities = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,6 +69,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this._Id = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.all_amenities = new System.Windows.Forms.Label();
             this.tabControlFaturalar.SuspendLayout();
             this.tabPageFaturaEkle.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -89,7 +90,8 @@
             // 
             // tabPageFaturaEkle
             // 
-            this.tabPageFaturaEkle.Controls.Add(this.button2);
+            this.tabPageFaturaEkle.Controls.Add(this.all_amenities);
+            this.tabPageFaturaEkle.Controls.Add(this.add_room);
             this.tabPageFaturaEkle.Controls.Add(this.btn_add_amenity);
             this.tabPageFaturaEkle.Controls.Add(this.show_amenities);
             this.tabPageFaturaEkle.Controls.Add(this.label6);
@@ -112,16 +114,17 @@
             this.tabPageFaturaEkle.Text = "Oda Ekle";
             this.tabPageFaturaEkle.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // add_room
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(379, 275);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 51);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "ADD ROOM";
-            this.button2.UseVisualStyleBackColor = false;
+            this.add_room.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.add_room.ForeColor = System.Drawing.Color.White;
+            this.add_room.Location = new System.Drawing.Point(379, 275);
+            this.add_room.Name = "add_room";
+            this.add_room.Size = new System.Drawing.Size(278, 51);
+            this.add_room.TabIndex = 6;
+            this.add_room.Text = "ADD ROOM";
+            this.add_room.UseVisualStyleBackColor = false;
+            this.add_room.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_add_amenity
             // 
@@ -133,6 +136,7 @@
             this.btn_add_amenity.TabIndex = 34;
             this.btn_add_amenity.Text = "ADD";
             this.btn_add_amenity.UseVisualStyleBackColor = false;
+            this.btn_add_amenity.Click += new System.EventHandler(this.btn_add_amenity_Click);
             // 
             // show_amenities
             // 
@@ -486,6 +490,14 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Id";
             // 
+            // all_amenities
+            // 
+            this.all_amenities.AutoSize = true;
+            this.all_amenities.Location = new System.Drawing.Point(553, 243);
+            this.all_amenities.Name = "all_amenities";
+            this.all_amenities.Size = new System.Drawing.Size(0, 16);
+            this.all_amenities.TabIndex = 35;
+            // 
             // OdaYonetim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -509,7 +521,7 @@
         private System.Windows.Forms.TabControl tabControlFaturalar;
         private System.Windows.Forms.TabPage tabPageFaturaEkle;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button add_room;
         private System.Windows.Forms.Button btn_add_amenity;
         private System.Windows.Forms.Label show_amenities;
         private System.Windows.Forms.Label label6;
@@ -547,5 +559,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewButtonColumn Edit;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.Label all_amenities;
     }
 }
