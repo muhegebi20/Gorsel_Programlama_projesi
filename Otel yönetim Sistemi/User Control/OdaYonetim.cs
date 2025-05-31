@@ -98,7 +98,7 @@ namespace Otel_yönetim_Sistemi.User_Control
 
         private void up_datagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0) return; // Prevent header row issues
+            if (e.RowIndex < 0) return;
 
             var currentRow = up_datagrid.Rows[e.RowIndex];
 
