@@ -161,7 +161,7 @@
             this.btn_delete.Location = new System.Drawing.Point(51, 390);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(174, 45);
-            this.btn_delete.TabIndex = 17;
+            this.btn_delete.TabIndex = 6;
             this.btn_delete.Text = "DELETE";
             this.btn_delete.UseVisualStyleBackColor = false;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
@@ -173,7 +173,7 @@
             this.btn_update.Location = new System.Drawing.Point(51, 330);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(174, 45);
-            this.btn_update.TabIndex = 17;
+            this.btn_update.TabIndex = 5;
             this.btn_update.Text = "UPDATE";
             this.btn_update.UseVisualStyleBackColor = false;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
@@ -194,7 +194,7 @@
             this.telefon.Multiline = true;
             this.telefon.Name = "telefon";
             this.telefon.Size = new System.Drawing.Size(150, 38);
-            this.telefon.TabIndex = 2;
+            this.telefon.TabIndex = 4;
             // 
             // _surname
             // 
@@ -202,7 +202,7 @@
             this._surname.Multiline = true;
             this._surname.Name = "_surname";
             this._surname.Size = new System.Drawing.Size(150, 38);
-            this._surname.TabIndex = 2;
+            this._surname.TabIndex = 1;
             // 
             // _email
             // 
@@ -228,7 +228,7 @@
             this._name.Multiline = true;
             this._name.Name = "_name";
             this._name.Size = new System.Drawing.Size(150, 35);
-            this._name.TabIndex = 4;
+            this._name.TabIndex = 0;
             // 
             // label4
             // 
@@ -250,7 +250,7 @@
             this.comboBox1.Location = new System.Drawing.Point(94, 160);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 24);
-            this.comboBox1.TabIndex = 18;
+            this.comboBox1.TabIndex = 2;
             // 
             // label5
             // 
