@@ -45,9 +45,9 @@ namespace Otel_yönetim_Sistemi.Forms
             string email = user_email.Text;
             string password = user_password.Text;
             selectedRole = userRole();
-            if(string.IsNullOrEmpty(selectedRole))
+            if(string.IsNullOrEmpty(selectedRole) || string.IsNullOrEmpty(email) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Lütfen bir rol seçin.");
+                MessageBox.Show("Lütfen tum alanlari doldurun.");
                 return;
             }
             string role = selectedRole;

@@ -25,6 +25,11 @@ namespace Otel_yönetim_Sistemi.Forms
             string name = _name.Text;
             string password = _password.Text;
             string email = _email.Text;
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(email))
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurun.");
+                return;
+            }
 
             if (_controller.UserExists(email))
             {
