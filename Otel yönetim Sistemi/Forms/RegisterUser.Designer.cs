@@ -31,13 +31,13 @@
             this._name = new System.Windows.Forms.TextBox();
             this.lbl_username = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btn_register = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this._password = new System.Windows.Forms.TextBox();
             this._email = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,6 +80,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Register";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(83, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(288, 36);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Otel Yönetim Sistemi";
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -89,7 +100,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(147, 428);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(121, 25);
-            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Hesabım var";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -101,7 +112,7 @@
             this.btn_register.Location = new System.Drawing.Point(89, 355);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(239, 48);
-            this.btn_register.TabIndex = 2;
+            this.btn_register.TabIndex = 3;
             this.btn_register.Text = "Kayit Ol";
             this.btn_register.UseVisualStyleBackColor = false;
             this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
@@ -134,7 +145,7 @@
             this._password.Location = new System.Drawing.Point(180, 251);
             this._password.Name = "_password";
             this._password.Size = new System.Drawing.Size(191, 28);
-            this._password.TabIndex = 0;
+            this._password.TabIndex = 2;
             // 
             // _email
             // 
@@ -142,18 +153,7 @@
             this._email.Location = new System.Drawing.Point(180, 192);
             this._email.Name = "_email";
             this._email.Size = new System.Drawing.Size(191, 28);
-            this._email.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(83, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(288, 36);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Otel Yönetim Sistemi";
+            this._email.TabIndex = 1;
             // 
             // RegisterUser
             // 

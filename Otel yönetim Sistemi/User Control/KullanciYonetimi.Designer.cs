@@ -115,7 +115,7 @@
             this.btn_delete.Location = new System.Drawing.Point(51, 348);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(174, 45);
-            this.btn_delete.TabIndex = 17;
+            this.btn_delete.TabIndex = 5;
             this.btn_delete.Text = "DELETE";
             this.btn_delete.UseVisualStyleBackColor = false;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
@@ -127,7 +127,7 @@
             this.btn_update.Location = new System.Drawing.Point(51, 288);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(174, 45);
-            this.btn_update.TabIndex = 17;
+            this.btn_update.TabIndex = 4;
             this.btn_update.Text = "UPDATE";
             this.btn_update.UseVisualStyleBackColor = false;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
@@ -148,7 +148,7 @@
             this._telefon.Multiline = true;
             this._telefon.Name = "_telefon";
             this._telefon.Size = new System.Drawing.Size(150, 38);
-            this._telefon.TabIndex = 2;
+            this._telefon.TabIndex = 3;
             // 
             // _surname
             // 
@@ -156,7 +156,7 @@
             this._surname.Multiline = true;
             this._surname.Name = "_surname";
             this._surname.Size = new System.Drawing.Size(150, 38);
-            this._surname.TabIndex = 2;
+            this._surname.TabIndex = 1;
             // 
             // _email
             // 
@@ -164,7 +164,7 @@
             this._email.Multiline = true;
             this._email.Name = "_email";
             this._email.Size = new System.Drawing.Size(150, 37);
-            this._email.TabIndex = 3;
+            this._email.TabIndex = 2;
             // 
             // lbl_username
             // 
@@ -182,7 +182,7 @@
             this._name.Multiline = true;
             this._name.Name = "_name";
             this._name.Size = new System.Drawing.Size(150, 35);
-            this._name.TabIndex = 4;
+            this._name.TabIndex = 0;
             // 
             // _id
             // 

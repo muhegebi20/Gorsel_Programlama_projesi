@@ -43,6 +43,7 @@ namespace Otel_yönetim_Sistemi.User_Control
 
             if (_userController.UpdateUser(user))
             {
+                User.Current = _userController.GetUserById(user.Id);
                 MessageBox.Show("Kullanıcı bilgileri güncellendi.");
                 user_info_datagrid.Rows.Clear();
                 LoadUserData();
@@ -55,7 +56,6 @@ namespace Otel_yönetim_Sistemi.User_Control
         }
         private void LoadUserData()
         {
-            user_info_datagrid.Rows.Clear();
             var user = User.Current;
             user_info_datagrid.Rows.Add(user.Id, user.Name, user.Surname, user.Email, user.Telefon);
 

@@ -51,7 +51,7 @@
             this.UserLog.Location = new System.Drawing.Point(138, 413);
             this.UserLog.Name = "UserLog";
             this.UserLog.Size = new System.Drawing.Size(137, 25);
-            this.UserLog.TabIndex = 4;
+            this.UserLog.TabIndex = 6;
             this.UserLog.TabStop = true;
             this.UserLog.Text = "Hesap Oluştur";
             this.UserLog.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk_register_LinkClicked);
@@ -64,7 +64,7 @@
             this.admin.Location = new System.Drawing.Point(291, 279);
             this.admin.Name = "admin";
             this.admin.Size = new System.Drawing.Size(77, 24);
-            this.admin.TabIndex = 3;
+            this.admin.TabIndex = 4;
             this.admin.TabStop = true;
             this.admin.Text = "Admin";
             this.admin.UseVisualStyleBackColor = true;
@@ -90,7 +90,7 @@
             this.user.Location = new System.Drawing.Point(57, 279);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(86, 24);
-            this.user.TabIndex = 3;
+            this.user.TabIndex = 2;
             this.user.TabStop = true;
             this.user.Text = "Müşteri";
             this.user.UseVisualStyleBackColor = true;
@@ -103,7 +103,7 @@
             this._login.Location = new System.Drawing.Point(115, 351);
             this._login.Name = "_login";
             this._login.Size = new System.Drawing.Size(187, 42);
-            this._login.TabIndex = 2;
+            this._login.TabIndex = 5;
             this._login.Text = "Login";
             this._login.UseVisualStyleBackColor = false;
             this._login.Click += new System.EventHandler(this._login_Click);
@@ -133,7 +133,7 @@
             this.user_email.Location = new System.Drawing.Point(181, 156);
             this.user_email.Name = "user_email";
             this.user_email.Size = new System.Drawing.Size(187, 28);
-            this.user_email.TabIndex = 1;
+            this.user_email.TabIndex = 0;
             // 
             // _email
             // 
