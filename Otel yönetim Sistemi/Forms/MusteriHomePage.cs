@@ -12,7 +12,7 @@ namespace Otel_yönetim_Sistemi.Forms
 {
     public partial class MusteriHomePage : Form
     {
-        public string UserName;
+        public static string UserName;
         public MusteriHomePage()
         {
             InitializeComponent();
@@ -29,6 +29,9 @@ namespace Otel_yönetim_Sistemi.Forms
             if (result == DialogResult.Yes)
             {
                 timer1.Stop();
+                this.Hide();
+                UserLogin userLoginForm = new UserLogin();
+                userLoginForm.ShowDialog();
                 this.Close();
             }
         }
@@ -49,18 +52,32 @@ namespace Otel_yönetim_Sistemi.Forms
         {
             panelMove.Visible = true;
             MovePanal(buttonRezervasyonlarimiGoruntule);
+            kullanciYonetimi1.Visible = false;
+            faturaGoruntu1.Visible = false;
+            rezervasyonGoruntu1.Visible = true;
         }
 
         private void buttonFaturalarimiGoruntule_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
             MovePanal(buttonFaturalarimiGoruntule);
+            kullanciYonetimi1.Visible = false;
+            faturaGoruntu1.Visible = true;
+            rezervasyonGoruntu1.Visible = false;
         }
 
         private void buttonBilgilerimiGuncelle_Click(object sender, EventArgs e)
         {
             panelMove.Visible = true;
             MovePanal(buttonBilgilerimiGuncelle);
+            kullanciYonetimi1.Visible = true;
+            faturaGoruntu1.Visible = false;
+            rezervasyonGoruntu1.Visible = false;
+        }
+
+        private void userBilGuncelle1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

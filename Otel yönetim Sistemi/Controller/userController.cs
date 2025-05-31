@@ -21,11 +21,11 @@ namespace Otel_yönetim_Sistemi.Controller
             _userDAO = new UserDAO();
         }
 
-        public void RegisterUser(string username,string email,  string password)
+        public void RegisterUser(string name, string email, string password)
         {
             var newUser = new User
             {
-                Username = username,
+                Name = name,
                 Email = email,
                 Password = BCrypt.Net.BCrypt.HashPassword(password)
             };
@@ -46,7 +46,7 @@ namespace Otel_yönetim_Sistemi.Controller
             else
             {
                 return false;
-            }    
+            }
         }
         public bool UserExists(string email)
         {
@@ -56,6 +56,45 @@ namespace Otel_yönetim_Sistemi.Controller
             };
             return _userDAO.UserExists(user);
         }
+        public List<User> GetAllUsers()
+        {
+            var users = _userDAO.GetAllUsers();
+            return users.ToList();
+        }
+        public bool UpdateUser(User user)
+        {
+            var users = _userDAO.GetAllUsers();
+            var existingUser = users.FirstOrDefault(u => u.Id == user.Id);
+            if (existingUser != null)
+            {
+                existingUser.Name = user.Name;
+                existingUser.Surname = user.Surname;
+                existingUser.Telefon = user.Telefon;
+                existingUser.Email = user.Email;
+                existingUser.Role = user.Role;
+                _userDAO.UpdateUser(existingUser); 
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı bulunamadı.");
+                return false;
+            }
+        }
+        public User GetUserById(MongoDB.Bson.ObjectId userId)
+        {
+            var users = _userDAO.GetAllUsers();
+            return users.FirstOrDefault(u => u.Id == userId);
+        }
+        public bool DeleteUser(string userId)
+        {
+            return _userDAO.DeleteUser(userId);
 
+        }
+        public User GetUserByEmail(string email)
+        {
+            var users = _userDAO.GetAllUsers();
+            return users.FirstOrDefault(u => u.Email == email);
+        }
     }
 }

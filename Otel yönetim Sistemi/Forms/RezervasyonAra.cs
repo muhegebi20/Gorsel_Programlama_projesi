@@ -6,25 +6,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms; 
+using System.Windows.Forms;
 
 namespace Otel_yönetim_Sistemi.Forms
 {
-    public partial class UpdateUserInfo: Form
+    public partial class RezervasyonAra : Form
     {
-        public UpdateUserInfo()
+        public RezervasyonAra()
         {
             InitializeComponent();
         }
 
-        private void UpdateUserInfo_Load(object sender, EventArgs e)
+        private void Geribtn_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

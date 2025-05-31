@@ -22,9 +22,14 @@ namespace Otel_yönetim_Sistemi.Forms
 
         private void btn_register_Click(object sender, EventArgs e)
         {
-            string username = _name.Text;
+            string name = _name.Text;
             string password = _password.Text;
             string email = _email.Text;
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(email))
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurun.");
+                return;
+            }
 
             if (_controller.UserExists(email))
             {
@@ -32,19 +37,22 @@ namespace Otel_yönetim_Sistemi.Forms
                 return;
             }
 
-            _controller.RegisterUser(username, email, password);
+            _controller.RegisterUser(name, email, password);
 
             MessageBox.Show("Kayıt başarılı!");
+            this.Hide();
             UserLogin userLoginForm = new UserLogin();
-            this.Hide(); // Kayıt formunu gizle
-            userLoginForm.Show();
+           
+            userLoginForm.ShowDialog();
+            this.Close();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             UserLogin userLoginForm = new UserLogin();
-            userLoginForm.Show();
-            this.Hide(); // Kayıt formunu gizle
+            userLoginForm.ShowDialog();
+            this.Close(); 
         }
     }
 }
