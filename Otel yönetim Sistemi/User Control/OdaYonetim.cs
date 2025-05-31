@@ -26,6 +26,7 @@ namespace Otel_yönetim_Sistemi.User_Control
         public OdaYonetim()
         {
             InitializeComponent();
+            LoadData();
         }
 
         private void btn_add_amenity_Click(object sender, EventArgs e)
@@ -63,5 +64,51 @@ namespace Otel_yönetim_Sistemi.User_Control
             box_price.Text = string.Empty;
             box_room_no.Text = string.Empty;
         }
+
+        private void up_btn_update_Click(object sender, EventArgs e)
+        {
+            roomNumber = up_room_no.Text.Trim();
+            roomType = up_room_type.Text.Trim();
+            price = Int32.Parse(up_room_price.Text.Trim());
+            capacity = Int32.Parse( up_capacity.Text);
+            status = up_room_status.Text.Trim();
+            var roomId = up_Id.Text.Trim();
+            if (string.IsNullOrEmpty(roomId))
+            {
+                MessageBox.Show("Lütfen güncellenecek istediginiz odayi seciniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            _controller.updateRoom(roomId, roomNumber, roomType, price, capacity, status, amenities);
+            MessageBox.Show("Successfully updated");
+            up_room_no.Text = string.Empty;
+            up_room_type.Text = string.Empty;
+            up_room_price.Text = string.Empty;
+            up_capacity.Text = string.Empty;
+            up_room_status.Text = string.Empty;
+            LoadData();
+
+        }
+        private void LoadData()
+        {
+            var rooms = _controller.getAllRooms();
+            up_datagrid.DataSource = null;
+            up_datagrid.DataSource = rooms;
+            up_datagrid.Refresh();
+        }
+
+        private void up_datagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            var currentRow = up_datagrid.Rows[e.RowIndex];
+
+            up_Id.Text = currentRow.Cells[0].Value?.ToString();
+            up_room_no.Text = currentRow.Cells[1].Value?.ToString();
+            up_room_type.Text = currentRow.Cells[2].Value?.ToString();
+            up_room_price.Text = currentRow.Cells[3].Value?.ToString();
+            up_capacity.Text = currentRow.Cells[4].Value?.ToString();
+            up_room_status.Text = currentRow.Cells[5].Value?.ToString();
+        }
+
     }
 }
