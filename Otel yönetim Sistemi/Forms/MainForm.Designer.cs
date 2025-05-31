@@ -134,6 +134,7 @@
             this.checkout.Name = "checkout";
             this.checkout.Size = new System.Drawing.Size(129, 22);
             this.checkout.TabIndex = 16;
+            this.checkout.ValueChanged += new System.EventHandler(this.checkout_ValueChanged);
             // 
             // MainForm
             // 

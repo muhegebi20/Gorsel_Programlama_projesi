@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Otel_yönetim_Sistemi.Controller;
+using Otel_yönetim_Sistemi.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,8 +29,27 @@ namespace Otel_yönetim_Sistemi.Forms
 
         private void RazervasyonAraBtn_Click(object sender, EventArgs e)
         {
-            RezervasyonAra rezervasyonAra = new RezervasyonAra();
+            DateTime girisTarihi = checkin.Value;
+            DateTime cikisTarihi = checkout.Value;
+            int kisiSayisi = int.Parse(comboBox3.SelectedItem.ToString());
+
+            roomController rc = new roomController();
+            var uygunOdalar = rc.getAvailableRooms();
+
+            var filtrelenmisOdalar = uygunOdalar
+                .Where(r => r.Capacity >= kisiSayisi)
+                .ToList();
+
+            // OPEN RezervasyonAra form and pass the data
+            RezervasyonAra rezervasyonAra = new RezervasyonAra(filtrelenmisOdalar);
             rezervasyonAra.ShowDialog();
+        }
+
+
+
+        private void checkout_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

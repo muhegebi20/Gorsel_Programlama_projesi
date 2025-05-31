@@ -47,10 +47,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelDataTime = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.rezervasyonGoruntu1 = new Otel_yönetim_Sistemi.User_Control.RezervasyonGoruntu();
             this.faturaGoruntu1 = new Otel_yönetim_Sistemi.User_Control.FaturaGoruntu();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.kullanciYonetimi1 = new Otel_yönetim_Sistemi.User_Control.KullanciYonetimi();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -266,7 +265,6 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.kullanciYonetimi1);
             this.panel5.Controls.Add(this.rezervasyonGoruntu1);
             this.panel5.Controls.Add(this.faturaGoruntu1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -275,11 +273,15 @@
             this.panel5.Size = new System.Drawing.Size(1029, 478);
             this.panel5.TabIndex = 3;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // rezervasyonGoruntu1
             // 
             this.rezervasyonGoruntu1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rezervasyonGoruntu1.Location = new System.Drawing.Point(0, 0);
-            this.rezervasyonGoruntu1.Margin = new System.Windows.Forms.Padding(4);
+            this.rezervasyonGoruntu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rezervasyonGoruntu1.Name = "rezervasyonGoruntu1";
             this.rezervasyonGoruntu1.Size = new System.Drawing.Size(1029, 478);
             this.rezervasyonGoruntu1.TabIndex = 2;
@@ -289,25 +291,11 @@
             // 
             this.faturaGoruntu1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.faturaGoruntu1.Location = new System.Drawing.Point(0, 0);
-            this.faturaGoruntu1.Margin = new System.Windows.Forms.Padding(4);
+            this.faturaGoruntu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.faturaGoruntu1.Name = "faturaGoruntu1";
             this.faturaGoruntu1.Size = new System.Drawing.Size(1029, 478);
             this.faturaGoruntu1.TabIndex = 1;
             this.faturaGoruntu1.Visible = false;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // kullanciYonetimi1
-            // 
-            this.kullanciYonetimi1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kullanciYonetimi1.Location = new System.Drawing.Point(0, 0);
-            this.kullanciYonetimi1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kullanciYonetimi1.Name = "kullanciYonetimi1";
-            this.kullanciYonetimi1.Size = new System.Drawing.Size(1029, 478);
-            this.kullanciYonetimi1.TabIndex = 3;
-            this.kullanciYonetimi1.Visible = false;
             // 
             // MusteriHomePage
             // 
@@ -362,6 +350,5 @@
         private System.Windows.Forms.Timer timer1;
         private User_Control.FaturaGoruntu faturaGoruntu1;
         private User_Control.RezervasyonGoruntu rezervasyonGoruntu1;
-        private User_Control.KullanciYonetimi kullanciYonetimi1;
     }
 }

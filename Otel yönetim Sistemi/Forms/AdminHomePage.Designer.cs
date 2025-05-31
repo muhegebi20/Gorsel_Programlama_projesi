@@ -49,11 +49,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.odaYonetim1 = new Otel_yönetim_Sistemi.User_Control.OdaYonetim();
             this.userBilGuncelle1 = new Otel_yönetim_Sistemi.User_Control.UserBilGuncelle();
             this.userControlFaturaHesapla2 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlFaturaHesapla1 = new Otel_yönetim_Sistemi.User_Control.UserControlFaturaHesapla();
-            this.odaYonetim1 = new Otel_yönetim_Sistemi.User_Control.OdaYonetim();
+            this.reservasyonYonetimi1 = new Otel_yönetim_Sistemi.User_Control.ReservasyonYonetimi();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -302,6 +303,7 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.reservasyonYonetimi1);
             this.panel5.Controls.Add(this.odaYonetim1);
             this.panel5.Controls.Add(this.userBilGuncelle1);
             this.panel5.Controls.Add(this.userControlFaturaHesapla2);
@@ -311,9 +313,15 @@
             this.panel5.Size = new System.Drawing.Size(1029, 478);
             this.panel5.TabIndex = 0;
             // 
-            // timer1
+            // odaYonetim1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.odaYonetim1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.odaYonetim1.Location = new System.Drawing.Point(0, 0);
+            this.odaYonetim1.Margin = new System.Windows.Forms.Padding(4);
+            this.odaYonetim1.Name = "odaYonetim1";
+            this.odaYonetim1.Size = new System.Drawing.Size(1029, 478);
+            this.odaYonetim1.TabIndex = 2;
+            this.odaYonetim1.Visible = false;
             // 
             // userBilGuncelle1
             // 
@@ -338,6 +346,10 @@
             this.userControlFaturaHesapla2.Visible = false;
             this.userControlFaturaHesapla2.Load += new System.EventHandler(this.userControlFaturaHesapla2_Load);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // userControlFaturaHesapla1
             // 
             this.userControlFaturaHesapla1.BackColor = System.Drawing.Color.White;
@@ -350,15 +362,15 @@
             this.userControlFaturaHesapla1.TabIndex = 0;
             this.userControlFaturaHesapla1.Visible = false;
             // 
-            // odaYonetim1
+            // reservasyonYonetimi1
             // 
-            this.odaYonetim1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.odaYonetim1.Location = new System.Drawing.Point(0, 0);
-            this.odaYonetim1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.odaYonetim1.Name = "odaYonetim1";
-            this.odaYonetim1.Size = new System.Drawing.Size(1029, 478);
-            this.odaYonetim1.TabIndex = 2;
-            this.odaYonetim1.Visible = false;
+            this.reservasyonYonetimi1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reservasyonYonetimi1.Location = new System.Drawing.Point(0, 0);
+            this.reservasyonYonetimi1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.reservasyonYonetimi1.Name = "reservasyonYonetimi1";
+            this.reservasyonYonetimi1.Size = new System.Drawing.Size(1029, 478);
+            this.reservasyonYonetimi1.TabIndex = 3;
+            this.reservasyonYonetimi1.Visible = false;
             // 
             // AdminHomePage
             // 
@@ -417,5 +429,6 @@
         private System.Windows.Forms.Label labelDataTime;
         private User_Control.UserBilGuncelle userBilGuncelle1;
         private User_Control.OdaYonetim odaYonetim1;
+        private User_Control.ReservasyonYonetimi reservasyonYonetimi1;
     }
 }

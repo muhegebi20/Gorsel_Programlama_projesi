@@ -217,6 +217,12 @@
     <Compile Include="User Control\OdaYonetim.Designer.cs">
       <DependentUpon>OdaYonetim.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Control\ReservasyonYonetimi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\ReservasyonYonetimi.Designer.cs">
+      <DependentUpon>ReservasyonYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\RezervasyonGoruntu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\OdaYonetim.resx">
       <DependentUpon>OdaYonetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\ReservasyonYonetimi.resx">
+      <DependentUpon>ReservasyonYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\RezervasyonGoruntu.resx">
       <DependentUpon>RezervasyonGoruntu.cs</DependentUpon>

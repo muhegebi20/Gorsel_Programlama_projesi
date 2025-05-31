@@ -28,12 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridViewFaturalar = new System.Windows.Forms.DataGridView();
-            this.OdaNU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fiyat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Geribtn = new System.Windows.Forms.Button();
+            this.Fiyat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OdaNU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewFaturalar = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFaturalar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Geribtn
+            // 
+            this.Geribtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.Geribtn.FlatAppearance.BorderSize = 0;
+            this.Geribtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Geribtn.ForeColor = System.Drawing.Color.White;
+            this.Geribtn.Location = new System.Drawing.Point(114, 367);
+            this.Geribtn.Name = "Geribtn";
+            this.Geribtn.Size = new System.Drawing.Size(126, 50);
+            this.Geribtn.TabIndex = 10;
+            this.Geribtn.Text = "Geri";
+            this.Geribtn.UseVisualStyleBackColor = false;
+            this.Geribtn.Click += new System.EventHandler(this.Geribtn_Click);
+            // 
+            // Fiyat
+            // 
+            this.Fiyat.HeaderText = "Fiyat";
+            this.Fiyat.MinimumWidth = 6;
+            this.Fiyat.Name = "Fiyat";
+            this.Fiyat.ReadOnly = true;
+            // 
+            // OdaNU
+            // 
+            this.OdaNU.HeaderText = "Oda Numara";
+            this.OdaNU.MinimumWidth = 6;
+            this.OdaNU.Name = "OdaNU";
+            this.OdaNU.ReadOnly = true;
             // 
             // dataGridViewFaturalar
             // 
@@ -51,34 +79,7 @@
             this.dataGridViewFaturalar.RowHeadersWidth = 51;
             this.dataGridViewFaturalar.Size = new System.Drawing.Size(337, 333);
             this.dataGridViewFaturalar.TabIndex = 9;
-            // 
-            // OdaNU
-            // 
-            this.OdaNU.HeaderText = "Oda Numara";
-            this.OdaNU.MinimumWidth = 6;
-            this.OdaNU.Name = "OdaNU";
-            this.OdaNU.ReadOnly = true;
-            // 
-            // Fiyat
-            // 
-            this.Fiyat.HeaderText = "Fiyat";
-            this.Fiyat.MinimumWidth = 6;
-            this.Fiyat.Name = "Fiyat";
-            this.Fiyat.ReadOnly = true;
-            // 
-            // Geribtn
-            // 
-            this.Geribtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.Geribtn.FlatAppearance.BorderSize = 0;
-            this.Geribtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Geribtn.ForeColor = System.Drawing.Color.White;
-            this.Geribtn.Location = new System.Drawing.Point(114, 367);
-            this.Geribtn.Name = "Geribtn";
-            this.Geribtn.Size = new System.Drawing.Size(126, 50);
-            this.Geribtn.TabIndex = 10;
-            this.Geribtn.Text = "Geri";
-            this.Geribtn.UseVisualStyleBackColor = false;
-            this.Geribtn.Click += new System.EventHandler(this.Geribtn_Click);
+            this.dataGridViewFaturalar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFaturalar_CellContentClick);
             // 
             // RezervasyonAra
             // 
@@ -100,10 +101,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridViewFaturalar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OdaNU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fiyat;
         private System.Windows.Forms.Button Geribtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fiyat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OdaNU;
+        private System.Windows.Forms.DataGridView dataGridViewFaturalar;
     }
 }
